@@ -1,0 +1,16 @@
+[
+  {
+    "id": "p03-terrea-5x20-1q",
+    "estado": "OK",
+    "tentativas": 3,
+    "erros": []
+  },
+  {
+    "id": "p13-sobrado-5x20-3q",
+    "estado": "COM RESSALVA",
+    "tentativas": 3,
+    "erros": [
+      "\"Escada\": imagem 3,40 ≠ ficha 5,40"
+    ]
+  }
+]

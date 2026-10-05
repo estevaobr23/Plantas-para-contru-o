@@ -1,0 +1,1225 @@
+{
+  "_leia": "Fichas p13 a p22 — SOBRADOS (dois pavimentos na mesma prancha 16:9). Regra: contorno externo igual nos dois pisos, escada na mesma posição, banheiros do superior alinhados sobre a área molhada do térreo.",
+  "projetos": [
+    {
+      "id": "p13-sobrado-5x20-3q",
+      "nome": "Sobrado 3 Quartos com Garagem",
+      "tipo": "sobrado",
+      "lote": {
+        "largura": 5,
+        "comprimento": 20
+      },
+      "area_construida": 109,
+      "quartos": 3,
+      "suites": 1,
+      "banheiros": 3,
+      "vagas": 1,
+      "observacao": "O sobrado clássico de lote estreito: térreo inteiro para garagem e social, três quartos no piso superior. Partido da ESCADA NA DIVISA — a escada encosta na parede lateral direita, liberando o centro da planta para os ambientes de estar.",
+      "ambientes_terreo": [
+        {
+          "nome": "Garagem",
+          "area": "12,50",
+          "vinculo": "frente do lote, coberta pelo piso superior, portão para a rua"
+        },
+        {
+          "nome": "Hall de Entrada",
+          "area": "3,20",
+          "vinculo": "porta de entrada vinda da garagem"
+        },
+        {
+          "nome": "Lavabo",
+          "area": "2,20",
+          "vinculo": "porta para o hall, sob a escada"
+        },
+        {
+          "nome": "Escada",
+          "area": "5,40",
+          "vinculo": "encostada na divisa direita, subindo do hall ao piso superior"
+        },
+        {
+          "nome": "Sala de Estar",
+          "area": "16,20",
+          "vinculo": "integrada à cozinha, janela para a frente"
+        },
+        {
+          "nome": "Cozinha",
+          "area": "11,40",
+          "vinculo": "integrada à sala, porta-janela para o quintal"
+        },
+        {
+          "nome": "A.S.",
+          "area": "3,40",
+          "vinculo": "atrás da cozinha, porta para o quintal"
+        },
+        {
+          "nome": "Quintal",
+          "area": "15,00",
+          "vinculo": "fundo do lote, gramado"
+        }
+      ],
+      "ambientes_superior": [
+        {
+          "nome": "Escada",
+          "area": "5,40",
+          "vinculo": "chegada no mesmo ponto do térreo, na divisa direita, com guarda-corpo"
+        },
+        {
+          "nome": "Circulação",
+          "area": "5,80",
+          "vinculo": "distribui os três quartos a partir da escada"
+        },
+        {
+          "nome": "Dormitório 01",
+          "area": "11,20",
+          "vinculo": "porta para a circulação, janela para a frente, sobre a garagem"
+        },
+        {
+          "nome": "Dormitório 02",
+          "area": "10,40",
+          "vinculo": "porta para a circulação, janela para o fundo"
+        },
+        {
+          "nome": "Suíte 03",
+          "area": "13,60",
+          "vinculo": "porta para a circulação, no fundo do piso"
+        },
+        {
+          "nome": "Banho Suíte",
+          "area": "3,80",
+          "vinculo": "privativo da Suíte 03 — porta somente dentro da suíte; alinhado sobre a cozinha do térreo"
+        },
+        {
+          "nome": "Banho Social",
+          "area": "4,00",
+          "vinculo": "porta para a circulação, junto aos Dormitórios 01 e 02; alinhado sobre o lavabo do térreo"
+        },
+        {
+          "nome": "Sacada",
+          "area": "4,50",
+          "vinculo": "à frente do Dormitório 01, sobre a garagem, porta-janela"
+        }
+      ],
+      "paineis": [
+        {
+          "titulo": "IMPLANTAÇÃO NO LOTE",
+          "descricao": "Vista superior do terreno de 5x20 m com a projeção do sobrado implantada, mostrando o contorno do pavimento superior em linha tracejada sobre o térreo, a garagem na frente e o quintal ao fundo. Calçada e rua na borda inferior. Desenho simplificado, sem mobiliário."
+        },
+        {
+          "titulo": "FUNDAÇÃO E CONTRAPISO",
+          "descricao": "Perspectiva isométrica do sobrado na fase de concretagem: sapatas e vigas baldrame seguindo exatamente as paredes do PAVIMENTO TÉRREO da planta, pilares aprumados nos pontos de apoio do piso superior, contrapiso nivelado e tubos aflorando no lavabo, cozinha e área de serviço. Sem pessoas."
+        }
+      ]
+    },
+    {
+      "id": "p14-sobrado-6x20-2suites",
+      "nome": "Sobrado 2 Suítes com Terraço",
+      "tipo": "sobrado",
+      "lote": {
+        "largura": 6,
+        "comprimento": 20
+      },
+      "area_construida": 126,
+      "quartos": 2,
+      "suites": 2,
+      "banheiros": 3,
+      "vagas": 1,
+      "observacao": "Partido do TERRAÇO DESCOBERTO NO FUNDO do piso superior: em vez de ocupar toda a laje, o pavimento de cima recua e abre um terraço sobre a cozinha, criando área externa privativa em lote pequeno. Só duas suítes, ambas amplas — projeto para casal sem filhos ou para venda de alto padrão compacto.",
+      "ambientes_terreo": [
+        {
+          "nome": "Garagem",
+          "area": "15,00",
+          "vinculo": "frente do lote, coberta, portão para a rua"
+        },
+        {
+          "nome": "Hall de Entrada",
+          "area": "3,60",
+          "vinculo": "porta de entrada vinda da garagem"
+        },
+        {
+          "nome": "Lavabo",
+          "area": "2,40",
+          "vinculo": "porta para o hall, sob a escada"
+        },
+        {
+          "nome": "Escada",
+          "area": "6,00",
+          "vinculo": "encostada na divisa esquerda, subindo do hall"
+        },
+        {
+          "nome": "Sala de Estar",
+          "area": "17,40",
+          "vinculo": "integrada à sala de jantar, janela para a frente"
+        },
+        {
+          "nome": "Sala de Jantar",
+          "area": "10,80",
+          "vinculo": "entre a sala de estar e a cozinha"
+        },
+        {
+          "nome": "Cozinha",
+          "area": "12,00",
+          "vinculo": "porta-janela para o quintal"
+        },
+        {
+          "nome": "A.S.",
+          "area": "3,60",
+          "vinculo": "atrás da cozinha, porta para o quintal"
+        },
+        {
+          "nome": "Quintal",
+          "area": "16,80",
+          "vinculo": "fundo do lote, gramado"
+        }
+      ],
+      "ambientes_superior": [
+        {
+          "nome": "Escada",
+          "area": "6,00",
+          "vinculo": "chegada no mesmo ponto do térreo, divisa esquerda, com guarda-corpo"
+        },
+        {
+          "nome": "Circulação",
+          "area": "5,40",
+          "vinculo": "distribui as duas suítes e dá acesso ao terraço"
+        },
+        {
+          "nome": "Suíte 01",
+          "area": "16,20",
+          "vinculo": "na frente, sobre a garagem, porta-janela para a sacada"
+        },
+        {
+          "nome": "Closet 01",
+          "area": "4,20",
+          "vinculo": "dentro da Suíte 01, porta somente para ela, sem passagem para outro ambiente"
+        },
+        {
+          "nome": "Banho Suíte 01",
+          "area": "4,40",
+          "vinculo": "privativo da Suíte 01 — porta somente dentro dela; alinhado sobre o lavabo do térreo"
+        },
+        {
+          "nome": "Suíte 02",
+          "area": "14,60",
+          "vinculo": "no meio do piso, porta para a circulação"
+        },
+        {
+          "nome": "Banho Suíte 02",
+          "area": "4,20",
+          "vinculo": "privativo da Suíte 02 — porta somente dentro dela; alinhado sobre a cozinha do térreo"
+        },
+        {
+          "nome": "Sacada",
+          "area": "4,80",
+          "vinculo": "à frente da Suíte 01, sobre a garagem"
+        },
+        {
+          "nome": "Terraço",
+          "area": "12,00",
+          "vinculo": "descoberto, no fundo do piso superior, sobre a cozinha do térreo, acessado pela circulação"
+        }
+      ],
+      "paineis": [
+        {
+          "titulo": "IMPLANTAÇÃO NO LOTE",
+          "descricao": "Vista superior do terreno de 6x20 m com a projeção do sobrado, mostrando o recuo do pavimento superior que gera o terraço no fundo, em linha tracejada sobre o térreo. Calçada e rua na borda inferior. Desenho simplificado, sem mobiliário."
+        },
+        {
+          "titulo": "FUNDAÇÃO E CONTRAPISO",
+          "descricao": "Perspectiva isométrica do sobrado na fase de concretagem: sapatas e vigas baldrame seguindo exatamente as paredes do pavimento térreo, pilares aprumados, contrapiso nivelado e tubos aflorando no lavabo, cozinha e área de serviço. Sem pessoas."
+        }
+      ]
+    },
+    {
+      "id": "p15-sobrado-45x25-estreito",
+      "nome": "Sobrado para Lote Muito Estreito",
+      "tipo": "sobrado",
+      "lote": {
+        "largura": 4.5,
+        "comprimento": 25
+      },
+      "area_construida": 93,
+      "quartos": 2,
+      "suites": 1,
+      "banheiros": 3,
+      "vagas": 1,
+      "observacao": "O lote mais difícil do catálogo: 4,5 m de frente. Partido do VAZIO DE ILUMINAÇÃO ZENITAL — um poço aberto do telhado até o térreo, no meio da planta, leva luz ao coração da casa, já que as duas divisas são paredes cegas. Escada em U encostada na divisa para economizar comprimento.",
+      "ambientes_terreo": [
+        {
+          "nome": "Garagem",
+          "area": "11,25",
+          "vinculo": "frente do lote, coberta, portão para a rua"
+        },
+        {
+          "nome": "Hall de Entrada",
+          "area": "2,80",
+          "vinculo": "porta de entrada vinda da garagem"
+        },
+        {
+          "nome": "Escada",
+          "area": "5,60",
+          "vinculo": "escada em U encostada na divisa direita"
+        },
+        {
+          "nome": "Lavabo",
+          "area": "2,00",
+          "vinculo": "porta para o hall, sob o patamar da escada"
+        },
+        {
+          "nome": "Sala de Estar",
+          "area": "14,40",
+          "vinculo": "integrada à cozinha, janela para a frente"
+        },
+        {
+          "nome": "Vazio de Luz",
+          "area": "4,50",
+          "vinculo": "poço descoberto no meio da planta, aberto até o telhado, levando luz ao térreo"
+        },
+        {
+          "nome": "Cozinha",
+          "area": "10,80",
+          "vinculo": "integrada à sala, janela para o vazio de luz e porta-janela para o quintal"
+        },
+        {
+          "nome": "A.S.",
+          "area": "3,15",
+          "vinculo": "atrás da cozinha, porta para o quintal"
+        },
+        {
+          "nome": "Quintal",
+          "area": "18,00",
+          "vinculo": "fundo do lote, gramado"
+        }
+      ],
+      "ambientes_superior": [
+        {
+          "nome": "Escada",
+          "area": "5,60",
+          "vinculo": "chegada no mesmo ponto do térreo, divisa direita, com guarda-corpo"
+        },
+        {
+          "nome": "Circulação",
+          "area": "5,20",
+          "vinculo": "faixa ao lado do vazio de luz, distribuindo os dois quartos"
+        },
+        {
+          "nome": "Vazio de Luz",
+          "area": "4,50",
+          "vinculo": "o mesmo poço do térreo, aqui apenas como vazio cercado por guarda-corpo, na mesma posição exata"
+        },
+        {
+          "nome": "Dormitório 01",
+          "area": "11,70",
+          "vinculo": "na frente, sobre a garagem, janela para a rua"
+        },
+        {
+          "nome": "Banho Social",
+          "area": "3,60",
+          "vinculo": "porta para a circulação, junto ao Dormitório 01; alinhado sobre o lavabo do térreo"
+        },
+        {
+          "nome": "Suíte 02",
+          "area": "13,50",
+          "vinculo": "no fundo do piso, porta para a circulação"
+        },
+        {
+          "nome": "Banho Suíte",
+          "area": "3,80",
+          "vinculo": "privativo da Suíte 02 — porta somente dentro dela; alinhado sobre a cozinha do térreo"
+        }
+      ],
+      "paineis": [
+        {
+          "titulo": "IMPLANTAÇÃO NO LOTE",
+          "descricao": "Vista superior do terreno muito estreito de 4,5x25 m com a projeção do sobrado ocupando toda a largura entre as divisas, o vazio de luz aparecendo como um furo no meio e o quintal ao fundo. Calçada e rua na borda inferior. Desenho simplificado, sem mobiliário."
+        },
+        {
+          "titulo": "FUNDAÇÃO E CONTRAPISO",
+          "descricao": "Perspectiva isométrica do sobrado estreito na fase de concretagem: sapatas e vigas baldrame seguindo exatamente as paredes do térreo, pilares aprumados, contrapiso nivelado com o vazio de luz sem contrapiso, e tubos aflorando no lavabo, cozinha e área de serviço. Sem pessoas."
+        }
+      ]
+    },
+    {
+      "id": "p16-sobrado-7x20-4q",
+      "nome": "Sobrado 4 Quartos com Suíte Master",
+      "tipo": "sobrado",
+      "lote": {
+        "largura": 7,
+        "comprimento": 20
+      },
+      "area_construida": 167,
+      "quartos": 4,
+      "suites": 1,
+      "banheiros": 4,
+      "vagas": 2,
+      "observacao": "Partido do PÉ-DIREITO DUPLO na sala: a sala de estar é aberta até a cobertura, e a circulação do piso superior passa como uma passarela com guarda-corpo olhando para baixo. No piso de cima, quatro quartos, com a suíte master voltada à frente e dotada de closet.",
+      "ambientes_terreo": [
+        {
+          "nome": "Garagem",
+          "area": "25,20",
+          "vinculo": "frente do lote, coberta, dois carros lado a lado"
+        },
+        {
+          "nome": "Hall de Entrada",
+          "area": "4,20",
+          "vinculo": "porta de entrada vinda da garagem"
+        },
+        {
+          "nome": "Lavabo",
+          "area": "2,60",
+          "vinculo": "porta para o hall, sob a escada"
+        },
+        {
+          "nome": "Escada",
+          "area": "6,80",
+          "vinculo": "encostada na divisa esquerda, subindo do hall"
+        },
+        {
+          "nome": "Sala de Estar",
+          "area": "21,00",
+          "vinculo": "pé-direito duplo, aberta até a cobertura, janela alta para a frente"
+        },
+        {
+          "nome": "Sala de Jantar",
+          "area": "12,60",
+          "vinculo": "ao lado da sala de estar, pé-direito normal"
+        },
+        {
+          "nome": "Cozinha",
+          "area": "13,40",
+          "vinculo": "porta-janela para o quintal"
+        },
+        {
+          "nome": "A.S.",
+          "area": "4,20",
+          "vinculo": "atrás da cozinha, porta para o quintal"
+        },
+        {
+          "nome": "Quintal",
+          "area": "18,20",
+          "vinculo": "fundo do lote, gramado"
+        }
+      ],
+      "ambientes_superior": [
+        {
+          "nome": "Escada",
+          "area": "6,80",
+          "vinculo": "chegada no mesmo ponto do térreo, divisa esquerda, com guarda-corpo"
+        },
+        {
+          "nome": "Vazio da Sala",
+          "area": "21,00",
+          "vinculo": "vazio do pé-direito duplo sobre a sala de estar, cercado por guarda-corpo, exatamente na projeção dela"
+        },
+        {
+          "nome": "Circulação",
+          "area": "8,40",
+          "vinculo": "passarela ao lado do vazio, distribuindo os quatro quartos"
+        },
+        {
+          "nome": "Suíte Master",
+          "area": "15,40",
+          "vinculo": "na frente, sobre a garagem, porta-janela para a sacada"
+        },
+        {
+          "nome": "Closet",
+          "area": "4,60",
+          "vinculo": "dentro da Suíte Master, porta somente para ela, sem passagem para outro ambiente"
+        },
+        {
+          "nome": "Banho Suíte",
+          "area": "4,60",
+          "vinculo": "privativo da Suíte Master — porta somente dentro dela, após o closet"
+        },
+        {
+          "nome": "Dormitório 02",
+          "area": "11,20",
+          "vinculo": "porta para a circulação"
+        },
+        {
+          "nome": "Dormitório 03",
+          "area": "10,80",
+          "vinculo": "porta para a circulação"
+        },
+        {
+          "nome": "Dormitório 04",
+          "area": "10,40",
+          "vinculo": "porta para a circulação, no fundo"
+        },
+        {
+          "nome": "Banho Social",
+          "area": "4,80",
+          "vinculo": "porta para a circulação, servindo os Dormitórios 02, 03 e 04; alinhado sobre a cozinha do térreo"
+        },
+        {
+          "nome": "Sacada",
+          "area": "5,60",
+          "vinculo": "à frente da Suíte Master, sobre a garagem"
+        }
+      ],
+      "paineis": [
+        {
+          "titulo": "IMPLANTAÇÃO NO LOTE",
+          "descricao": "Vista superior do terreno de 7x20 m com a projeção do sobrado implantada, garagem para dois carros na frente e quintal ao fundo, com o contorno do piso superior em linha tracejada. Calçada e rua na borda inferior. Desenho simplificado, sem mobiliário."
+        },
+        {
+          "titulo": "FUNDAÇÃO E CONTRAPISO",
+          "descricao": "Perspectiva isométrica do sobrado na fase de concretagem: sapatas e vigas baldrame seguindo exatamente as paredes do térreo, pilares aprumados nos apoios do piso superior, contrapiso nivelado e tubos aflorando no lavabo, cozinha e área de serviço. Sem pessoas."
+        }
+      ]
+    },
+    {
+      "id": "p17-sobrado-8x20-esquina",
+      "nome": "Sobrado de Esquina com Duas Frentes",
+      "tipo": "sobrado",
+      "lote": {
+        "largura": 8,
+        "comprimento": 20
+      },
+      "area_construida": 152,
+      "quartos": 3,
+      "suites": 1,
+      "banheiros": 4,
+      "vagas": 2,
+      "observacao": "Partido das DUAS FRENTES: lote de esquina, com a rua embaixo e outra rua na lateral direita. A casa aproveita a esquina com aberturas nos dois lados e um jardim em L que contorna o terreno. A entrada social fica na rua principal e a garagem na rua lateral, separando os fluxos.",
+      "ambientes_terreo": [
+        {
+          "nome": "Garagem",
+          "area": "25,60",
+          "vinculo": "lateral direita, portão voltado para a RUA LATERAL, dois carros"
+        },
+        {
+          "nome": "Jardim em L",
+          "area": "14,40",
+          "vinculo": "faixa ajardinada contornando a esquina, entre as calçadas e a casa"
+        },
+        {
+          "nome": "Hall de Entrada",
+          "area": "4,40",
+          "vinculo": "porta de entrada voltada para a RUA PRINCIPAL, na frente do lote"
+        },
+        {
+          "nome": "Lavabo",
+          "area": "2,60",
+          "vinculo": "porta para o hall, sob a escada"
+        },
+        {
+          "nome": "Escada",
+          "area": "6,40",
+          "vinculo": "encostada na divisa esquerda, subindo do hall"
+        },
+        {
+          "nome": "Sala de Estar",
+          "area": "19,20",
+          "vinculo": "no canto da esquina, janelas para as duas ruas"
+        },
+        {
+          "nome": "Sala de Jantar",
+          "area": "11,60",
+          "vinculo": "entre a sala de estar e a cozinha"
+        },
+        {
+          "nome": "Cozinha",
+          "area": "13,20",
+          "vinculo": "porta-janela para o quintal"
+        },
+        {
+          "nome": "A.S.",
+          "area": "4,00",
+          "vinculo": "atrás da cozinha, porta para o quintal"
+        },
+        {
+          "nome": "Quintal",
+          "area": "16,00",
+          "vinculo": "fundo do lote, gramado"
+        }
+      ],
+      "ambientes_superior": [
+        {
+          "nome": "Escada",
+          "area": "6,40",
+          "vinculo": "chegada no mesmo ponto do térreo, divisa esquerda, com guarda-corpo"
+        },
+        {
+          "nome": "Circulação",
+          "area": "7,20",
+          "vinculo": "distribui os três quartos"
+        },
+        {
+          "nome": "Suíte 01",
+          "area": "15,80",
+          "vinculo": "no canto da esquina, janelas para as duas ruas, porta-janela para a sacada"
+        },
+        {
+          "nome": "Closet",
+          "area": "4,40",
+          "vinculo": "dentro da Suíte 01, porta somente para ela"
+        },
+        {
+          "nome": "Banho Suíte",
+          "area": "4,40",
+          "vinculo": "privativo da Suíte 01 — porta somente dentro dela; alinhado sobre o lavabo do térreo"
+        },
+        {
+          "nome": "Dormitório 02",
+          "area": "11,60",
+          "vinculo": "porta para a circulação"
+        },
+        {
+          "nome": "Dormitório 03",
+          "area": "11,00",
+          "vinculo": "porta para a circulação"
+        },
+        {
+          "nome": "Banho Social",
+          "area": "4,60",
+          "vinculo": "porta para a circulação, servindo os Dormitórios 02 e 03; alinhado sobre a cozinha do térreo"
+        },
+        {
+          "nome": "Sacada",
+          "area": "7,20",
+          "vinculo": "em L, contornando a esquina à frente da Suíte 01"
+        }
+      ],
+      "paineis": [
+        {
+          "titulo": "IMPLANTAÇÃO NO LOTE",
+          "descricao": "Vista superior do terreno de esquina 8x20 m mostrando as DUAS ruas, uma na borda inferior e outra na lateral direita, com as duas calçadas, o jardim em L e a projeção do sobrado. Indicar o portão da garagem voltado para a rua lateral e a entrada social para a rua principal. Desenho simplificado, sem mobiliário."
+        },
+        {
+          "titulo": "FUNDAÇÃO E CONTRAPISO",
+          "descricao": "Perspectiva isométrica do sobrado de esquina na fase de concretagem: sapatas e vigas baldrame seguindo exatamente as paredes do térreo, pilares aprumados, contrapiso nivelado e tubos aflorando no lavabo, cozinha e área de serviço. Sem pessoas."
+        }
+      ]
+    },
+    {
+      "id": "p18-sobrado-10x20-duplex",
+      "nome": "Sobrado Duplex com Piscina",
+      "tipo": "sobrado",
+      "lote": {
+        "largura": 10,
+        "comprimento": 20
+      },
+      "area_construida": 175,
+      "quartos": 3,
+      "suites": 2,
+      "banheiros": 4,
+      "vagas": 2,
+      "observacao": "O projeto mais alto padrão do catálogo. Partido do LAZER NO FUNDO: piscina e varanda gourmet ocupam todo o fundo do lote, e a social do térreo se abre inteira para elas por portas-janela corridas. No piso superior, as duas suítes voltam-se para o fundo, de costas para a rua.",
+      "ambientes_terreo": [
+        {
+          "nome": "Garagem",
+          "area": "26,00",
+          "vinculo": "frente do lote, coberta, dois carros lado a lado"
+        },
+        {
+          "nome": "Hall de Entrada",
+          "area": "5,20",
+          "vinculo": "porta de entrada vinda da garagem"
+        },
+        {
+          "nome": "Lavabo",
+          "area": "2,80",
+          "vinculo": "porta para o hall, sob a escada"
+        },
+        {
+          "nome": "Escada",
+          "area": "7,20",
+          "vinculo": "encostada na divisa esquerda, subindo do hall"
+        },
+        {
+          "nome": "Sala de Estar",
+          "area": "22,40",
+          "vinculo": "porta-janela corrida para a varanda gourmet"
+        },
+        {
+          "nome": "Sala de Jantar",
+          "area": "13,60",
+          "vinculo": "entre a sala de estar e a cozinha"
+        },
+        {
+          "nome": "Cozinha",
+          "area": "14,40",
+          "vinculo": "porta-janela para a varanda gourmet"
+        },
+        {
+          "nome": "A.S.",
+          "area": "4,40",
+          "vinculo": "ao lado da cozinha, porta para a varanda"
+        },
+        {
+          "nome": "Varanda Gourmet",
+          "area": "18,00",
+          "vinculo": "coberta, no fundo, com churrasqueira e bancada, voltada para a piscina"
+        },
+        {
+          "nome": "Piscina",
+          "area": "15,00",
+          "vinculo": "descoberta, no fundo do lote, à frente da varanda gourmet"
+        },
+        {
+          "nome": "Deck",
+          "area": "9,00",
+          "vinculo": "faixa de madeira contornando a piscina"
+        }
+      ],
+      "ambientes_superior": [
+        {
+          "nome": "Escada",
+          "area": "7,20",
+          "vinculo": "chegada no mesmo ponto do térreo, divisa esquerda, com guarda-corpo"
+        },
+        {
+          "nome": "Circulação",
+          "area": "8,80",
+          "vinculo": "distribui os três quartos"
+        },
+        {
+          "nome": "Suíte Master",
+          "area": "17,60",
+          "vinculo": "no fundo do piso, porta-janela para a sacada voltada à piscina"
+        },
+        {
+          "nome": "Closet Master",
+          "area": "5,40",
+          "vinculo": "dentro da Suíte Master, porta somente para ela"
+        },
+        {
+          "nome": "Banho Master",
+          "area": "5,20",
+          "vinculo": "privativo da Suíte Master — porta somente dentro dela, após o closet; alinhado sobre a cozinha do térreo"
+        },
+        {
+          "nome": "Suíte 02",
+          "area": "14,20",
+          "vinculo": "porta para a circulação, no meio do piso"
+        },
+        {
+          "nome": "Banho Suíte 02",
+          "area": "4,40",
+          "vinculo": "privativo da Suíte 02 — porta somente dentro dela; alinhado sobre a área de serviço do térreo"
+        },
+        {
+          "nome": "Dormitório 03",
+          "area": "12,00",
+          "vinculo": "na frente, sobre a garagem, janela para a rua"
+        },
+        {
+          "nome": "Banho Social",
+          "area": "4,60",
+          "vinculo": "porta para a circulação, servindo o Dormitório 03; alinhado sobre o lavabo do térreo"
+        },
+        {
+          "nome": "Sacada",
+          "area": "9,60",
+          "vinculo": "no fundo, à frente da Suíte Master, com vista para a piscina"
+        }
+      ],
+      "paineis": [
+        {
+          "titulo": "IMPLANTAÇÃO NO LOTE",
+          "descricao": "Vista superior do terreno de 10x20 m com a projeção do sobrado, a garagem na frente, a varanda gourmet coberta e a piscina com deck ocupando todo o fundo. Calçada e rua na borda inferior. Desenho simplificado, sem mobiliário."
+        },
+        {
+          "titulo": "FUNDAÇÃO E CONTRAPISO",
+          "descricao": "Perspectiva isométrica do sobrado na fase de concretagem: sapatas e vigas baldrame seguindo exatamente as paredes do térreo, pilares aprumados, contrapiso nivelado, a cava da piscina escavada no fundo e tubos aflorando no lavabo, cozinha, área de serviço e no ponto da churrasqueira. Sem pessoas."
+        }
+      ]
+    },
+    {
+      "id": "p19-sobrado-6x25-comercio",
+      "nome": "Sobrado com Ponto Comercial no Térreo",
+      "tipo": "sobrado",
+      "lote": {
+        "largura": 6,
+        "comprimento": 25
+      },
+      "area_construida": 153,
+      "quartos": 3,
+      "suites": 1,
+      "banheiros": 4,
+      "vagas": 1,
+      "observacao": "Partido do USO MISTO COM FLUXOS SEPARADOS: loja na frente do térreo, voltada à rua com porta de enrolar, e moradia completa no piso superior, com acesso por uma escada independente que sobe de um corredor lateral. Cliente da loja e morador nunca se cruzam.",
+      "ambientes_terreo": [
+        {
+          "nome": "Loja",
+          "area": "33,00",
+          "vinculo": "frente do lote, porta de enrolar voltada para a rua, pé-direito alto"
+        },
+        {
+          "nome": "Banho da Loja",
+          "area": "3,00",
+          "vinculo": "nos fundos da loja, porta somente para dentro dela"
+        },
+        {
+          "nome": "Depósito",
+          "area": "7,20",
+          "vinculo": "nos fundos da loja, porta somente para dentro dela"
+        },
+        {
+          "nome": "Corredor de Acesso",
+          "area": "12,50",
+          "vinculo": "faixa estreita na divisa esquerda, da rua até a escada da moradia, com portão próprio"
+        },
+        {
+          "nome": "Escada",
+          "area": "6,00",
+          "vinculo": "no fim do corredor lateral, subindo direto para a moradia, sem contato com a loja"
+        },
+        {
+          "nome": "Vaga Coberta",
+          "area": "12,50",
+          "vinculo": "nos fundos do lote, uso do morador, acessada pelo corredor lateral"
+        },
+        {
+          "nome": "Quintal",
+          "area": "12,00",
+          "vinculo": "fundo do lote, atrás da vaga"
+        }
+      ],
+      "ambientes_superior": [
+        {
+          "nome": "Escada",
+          "area": "6,00",
+          "vinculo": "chegada no mesmo ponto do térreo, com guarda-corpo"
+        },
+        {
+          "nome": "Hall",
+          "area": "3,60",
+          "vinculo": "chegada da escada, porta de entrada da moradia"
+        },
+        {
+          "nome": "Sala de Estar",
+          "area": "17,40",
+          "vinculo": "na frente do piso, sobre a loja, janela para a rua"
+        },
+        {
+          "nome": "Cozinha",
+          "area": "11,40",
+          "vinculo": "integrada à sala, janela para o fundo"
+        },
+        {
+          "nome": "A.S.",
+          "area": "3,60",
+          "vinculo": "ao lado da cozinha; alinhada sobre o banho da loja do térreo"
+        },
+        {
+          "nome": "Circulação",
+          "area": "6,60",
+          "vinculo": "distribui os três quartos"
+        },
+        {
+          "nome": "Dormitório 01",
+          "area": "11,40",
+          "vinculo": "porta para a circulação"
+        },
+        {
+          "nome": "Dormitório 02",
+          "area": "10,20",
+          "vinculo": "porta para a circulação"
+        },
+        {
+          "nome": "Suíte 03",
+          "area": "13,20",
+          "vinculo": "no fundo do piso, porta para a circulação"
+        },
+        {
+          "nome": "Banho Suíte",
+          "area": "3,80",
+          "vinculo": "privativo da Suíte 03 — porta somente dentro dela"
+        },
+        {
+          "nome": "Banho Social",
+          "area": "4,00",
+          "vinculo": "porta para a circulação, servindo os Dormitórios 01 e 02, afastado do Banho Suíte"
+        }
+      ],
+      "paineis": [
+        {
+          "titulo": "IMPLANTAÇÃO NO LOTE",
+          "descricao": "Vista superior do terreno de 6x25 m mostrando a loja na frente com a porta de enrolar na rua, o corredor lateral de acesso independente à moradia, a vaga coberta e o quintal no fundo, com a projeção do piso superior em linha tracejada. Calçada e rua na borda inferior. Desenho simplificado, sem mobiliário."
+        },
+        {
+          "titulo": "FUNDAÇÃO E CONTRAPISO",
+          "descricao": "Perspectiva isométrica do sobrado misto na fase de concretagem: sapatas e vigas baldrame seguindo exatamente as paredes do térreo, pilares aprumados, contrapiso nivelado e tubos aflorando no banho da loja. Sem pessoas."
+        }
+      ]
+    },
+    {
+      "id": "p20-sobrado-12x20-geminados",
+      "nome": "Dois Sobrados Geminados de 2 Quartos",
+      "tipo": "sobrado",
+      "lote": {
+        "largura": 12,
+        "comprimento": 20
+      },
+      "area_construida": 190,
+      "quartos": 2,
+      "suites": 1,
+      "banheiros": 3,
+      "vagas": 1,
+      "observacao": "Partido das UNIDADES VERTICAIS ESPELHADAS: dois sobrados idênticos dividindo a parede central, cada um com garagem, entrada e quintal próprios. Desenhar as DUAS unidades completas em cada pavimento, com a parede geminada em destaque mais grossa no centro. Rotular os ambientes com o sufixo da unidade. Os números são por unidade.",
+      "ambientes_terreo": [
+        {
+          "nome": "Garagem A",
+          "area": "13,20",
+          "vinculo": "frente, metade esquerda, unidade A"
+        },
+        {
+          "nome": "Hall A",
+          "area": "3,20",
+          "vinculo": "unidade A, porta de entrada vinda da garagem A"
+        },
+        {
+          "nome": "Lavabo A",
+          "area": "2,20",
+          "vinculo": "unidade A, sob a escada A"
+        },
+        {
+          "nome": "Escada A",
+          "area": "5,40",
+          "vinculo": "unidade A, encostada na parede geminada central"
+        },
+        {
+          "nome": "Sala A",
+          "area": "16,80",
+          "vinculo": "unidade A, integrada à cozinha A"
+        },
+        {
+          "nome": "Cozinha A",
+          "area": "10,80",
+          "vinculo": "unidade A, porta-janela para o quintal A"
+        },
+        {
+          "nome": "Quintal A",
+          "area": "14,40",
+          "vinculo": "unidade A, fundo, metade esquerda"
+        },
+        {
+          "nome": "Garagem B",
+          "area": "13,20",
+          "vinculo": "frente, metade direita, unidade B, espelhada em relação à A"
+        },
+        {
+          "nome": "Hall B",
+          "area": "3,20",
+          "vinculo": "unidade B, porta de entrada vinda da garagem B"
+        },
+        {
+          "nome": "Lavabo B",
+          "area": "2,20",
+          "vinculo": "unidade B, sob a escada B"
+        },
+        {
+          "nome": "Escada B",
+          "area": "5,40",
+          "vinculo": "unidade B, encostada na parede geminada central"
+        },
+        {
+          "nome": "Sala B",
+          "area": "16,80",
+          "vinculo": "unidade B, integrada à cozinha B"
+        },
+        {
+          "nome": "Cozinha B",
+          "area": "10,80",
+          "vinculo": "unidade B, porta-janela para o quintal B"
+        },
+        {
+          "nome": "Quintal B",
+          "area": "14,40",
+          "vinculo": "unidade B, fundo, metade direita"
+        }
+      ],
+      "ambientes_superior": [
+        {
+          "nome": "Escada A",
+          "area": "5,40",
+          "vinculo": "unidade A, chegada no mesmo ponto do térreo, com guarda-corpo"
+        },
+        {
+          "nome": "Circulação A",
+          "area": "4,60",
+          "vinculo": "unidade A, distribui os dois quartos"
+        },
+        {
+          "nome": "Suíte 01 A",
+          "area": "14,40",
+          "vinculo": "unidade A, na frente, sobre a garagem A"
+        },
+        {
+          "nome": "Banho Suíte A",
+          "area": "3,80",
+          "vinculo": "unidade A, privativo da Suíte 01 A — porta somente dentro dela"
+        },
+        {
+          "nome": "Dorm. 02 A",
+          "area": "11,40",
+          "vinculo": "unidade A, no fundo, porta para a circulação A"
+        },
+        {
+          "nome": "Banho Social A",
+          "area": "3,80",
+          "vinculo": "unidade A, porta para a circulação A, junto ao Dorm. 02 A"
+        },
+        {
+          "nome": "Escada B",
+          "area": "5,40",
+          "vinculo": "unidade B, chegada no mesmo ponto do térreo, com guarda-corpo"
+        },
+        {
+          "nome": "Circulação B",
+          "area": "4,60",
+          "vinculo": "unidade B, distribui os dois quartos"
+        },
+        {
+          "nome": "Suíte 01 B",
+          "area": "14,40",
+          "vinculo": "unidade B, na frente, sobre a garagem B"
+        },
+        {
+          "nome": "Banho Suíte B",
+          "area": "3,80",
+          "vinculo": "unidade B, privativo da Suíte 01 B — porta somente dentro dela"
+        },
+        {
+          "nome": "Dorm. 02 B",
+          "area": "11,40",
+          "vinculo": "unidade B, no fundo, porta para a circulação B"
+        },
+        {
+          "nome": "Banho Social B",
+          "area": "3,80",
+          "vinculo": "unidade B, porta para a circulação B, junto ao Dorm. 02 B"
+        }
+      ],
+      "paineis": [
+        {
+          "titulo": "IMPLANTAÇÃO NO LOTE",
+          "descricao": "Vista superior do terreno de 12x20 m com os dois sobrados geminados implantados lado a lado, a parede comum central em destaque, as duas garagens na frente e os dois quintais no fundo separados por muro. Calçada e rua na borda inferior. Desenho simplificado, sem mobiliário."
+        },
+        {
+          "titulo": "FUNDAÇÃO E CONTRAPISO",
+          "descricao": "Perspectiva isométrica das duas unidades na fase de concretagem: sapatas e vigas baldrame seguindo exatamente as paredes do térreo, incluindo a parede geminada central, pilares aprumados, contrapiso nivelado e tubos aflorando nos dois lavabos e nas duas cozinhas. Sem pessoas."
+        }
+      ]
+    },
+    {
+      "id": "p21-sobrado-5x25-compacto",
+      "nome": "Sobrado Compacto 2 Quartos para Aluguel",
+      "tipo": "sobrado",
+      "lote": {
+        "largura": 5,
+        "comprimento": 25
+      },
+      "area_construida": 88,
+      "quartos": 2,
+      "suites": 0,
+      "banheiros": 2,
+      "vagas": 1,
+      "observacao": "Partido da ECONOMIA MÁXIMA: sobrado pensado para render aluguel, com área construída enxuta e as duas áreas molhadas empilhadas na mesma prumada para baratear a instalação hidráulica. Sem suíte, sem sacada, sem lavabo — só o essencial bem resolvido, com quintal generoso no fundo.",
+      "ambientes_terreo": [
+        {
+          "nome": "Vaga Coberta",
+          "area": "12,50",
+          "vinculo": "frente do lote, coberta pelo piso superior"
+        },
+        {
+          "nome": "Hall de Entrada",
+          "area": "2,80",
+          "vinculo": "porta de entrada vinda da vaga"
+        },
+        {
+          "nome": "Escada",
+          "area": "5,20",
+          "vinculo": "encostada na divisa direita, subindo do hall"
+        },
+        {
+          "nome": "Sala",
+          "area": "15,40",
+          "vinculo": "integrada à cozinha, janela para a frente"
+        },
+        {
+          "nome": "Cozinha",
+          "area": "10,60",
+          "vinculo": "integrada à sala, porta-janela para o quintal"
+        },
+        {
+          "nome": "A.S.",
+          "area": "3,40",
+          "vinculo": "atrás da cozinha, porta para o quintal; na mesma prumada do banheiro de cima"
+        },
+        {
+          "nome": "Quintal",
+          "area": "22,50",
+          "vinculo": "fundo do lote, gramado, generoso"
+        }
+      ],
+      "ambientes_superior": [
+        {
+          "nome": "Escada",
+          "area": "5,20",
+          "vinculo": "chegada no mesmo ponto do térreo, divisa direita, com guarda-corpo"
+        },
+        {
+          "nome": "Circulação",
+          "area": "4,80",
+          "vinculo": "distribui os dois quartos e o banheiro"
+        },
+        {
+          "nome": "Dormitório 01",
+          "area": "12,40",
+          "vinculo": "na frente, sobre a vaga coberta, janela para a rua"
+        },
+        {
+          "nome": "Dormitório 02",
+          "area": "11,20",
+          "vinculo": "no fundo, janela para o quintal"
+        },
+        {
+          "nome": "Banheiro",
+          "area": "4,20",
+          "vinculo": "porta para a circulação, servindo os dois quartos; alinhado sobre a área de serviço do térreo, na mesma prumada hidráulica"
+        }
+      ],
+      "paineis": [
+        {
+          "titulo": "IMPLANTAÇÃO NO LOTE",
+          "descricao": "Vista superior do terreno de 5x25 m com a projeção do sobrado compacto ocupando a frente e o meio do lote, e o quintal grande ao fundo, com o contorno do piso superior em linha tracejada. Calçada e rua na borda inferior. Desenho simplificado, sem mobiliário."
+        },
+        {
+          "titulo": "FUNDAÇÃO E CONTRAPISO",
+          "descricao": "Perspectiva isométrica do sobrado na fase de concretagem: sapatas e vigas baldrame seguindo exatamente as paredes do térreo, pilares aprumados, contrapiso nivelado e tubos aflorando na cozinha e na área de serviço, na prumada única das áreas molhadas. Sem pessoas."
+        }
+      ]
+    },
+    {
+      "id": "p22-sobrado-7x25-recuado",
+      "nome": "Sobrado com Jardim Frontal Recuado",
+      "tipo": "sobrado",
+      "lote": {
+        "largura": 7,
+        "comprimento": 25
+      },
+      "area_construida": 149,
+      "quartos": 3,
+      "suites": 1,
+      "banheiros": 4,
+      "vagas": 2,
+      "observacao": "Partido do RECUO AJARDINADO: em vez de ocupar a frente com garagem, a casa recua e abre um jardim frontal com passeio de pedras até a porta. A garagem vai para a lateral, descoberta com pergolado. A fachada ganha respiro e a sala recebe sol da manhã pela frente.",
+      "ambientes_terreo": [
+        {
+          "nome": "Jardim Frontal",
+          "area": "17,50",
+          "vinculo": "frente do lote, ajardinado, com passeio de pedras da calçada até a porta de entrada"
+        },
+        {
+          "nome": "Garagem",
+          "area": "25,00",
+          "vinculo": "faixa lateral direita, descoberta com pergolado, dois carros em fila"
+        },
+        {
+          "nome": "Varanda",
+          "area": "6,30",
+          "vinculo": "coberta, entre o jardim frontal e a porta de entrada"
+        },
+        {
+          "nome": "Hall de Entrada",
+          "area": "4,20",
+          "vinculo": "porta de entrada vinda da varanda"
+        },
+        {
+          "nome": "Lavabo",
+          "area": "2,60",
+          "vinculo": "porta para o hall, sob a escada"
+        },
+        {
+          "nome": "Escada",
+          "area": "6,60",
+          "vinculo": "encostada na divisa esquerda, subindo do hall"
+        },
+        {
+          "nome": "Sala de Estar",
+          "area": "18,20",
+          "vinculo": "janela ampla para o jardim frontal"
+        },
+        {
+          "nome": "Sala de Jantar",
+          "area": "11,90",
+          "vinculo": "entre a sala de estar e a cozinha"
+        },
+        {
+          "nome": "Cozinha",
+          "area": "12,60",
+          "vinculo": "porta-janela para o quintal"
+        },
+        {
+          "nome": "A.S.",
+          "area": "3,90",
+          "vinculo": "atrás da cozinha, porta para o quintal"
+        },
+        {
+          "nome": "Quintal",
+          "area": "21,00",
+          "vinculo": "fundo do lote, gramado"
+        }
+      ],
+      "ambientes_superior": [
+        {
+          "nome": "Escada",
+          "area": "6,60",
+          "vinculo": "chegada no mesmo ponto do térreo, divisa esquerda, com guarda-corpo"
+        },
+        {
+          "nome": "Circulação",
+          "area": "7,00",
+          "vinculo": "distribui os três quartos"
+        },
+        {
+          "nome": "Suíte 01",
+          "area": "15,40",
+          "vinculo": "na frente, porta-janela para a sacada sobre a varanda"
+        },
+        {
+          "nome": "Closet",
+          "area": "4,20",
+          "vinculo": "dentro da Suíte 01, porta somente para ela"
+        },
+        {
+          "nome": "Banho Suíte",
+          "area": "4,20",
+          "vinculo": "privativo da Suíte 01 — porta somente dentro dela; alinhado sobre o lavabo do térreo"
+        },
+        {
+          "nome": "Dormitório 02",
+          "area": "11,20",
+          "vinculo": "porta para a circulação"
+        },
+        {
+          "nome": "Dormitório 03",
+          "area": "10,50",
+          "vinculo": "porta para a circulação, no fundo"
+        },
+        {
+          "nome": "Banho Social",
+          "area": "4,40",
+          "vinculo": "porta para a circulação, servindo os Dormitórios 02 e 03; alinhado sobre a cozinha do térreo"
+        },
+        {
+          "nome": "Sacada",
+          "area": "6,30",
+          "vinculo": "à frente da Suíte 01, sobre a varanda, voltada ao jardim frontal"
+        }
+      ],
+      "paineis": [
+        {
+          "titulo": "IMPLANTAÇÃO NO LOTE",
+          "descricao": "Vista superior do terreno de 7x25 m mostrando o jardim frontal com o passeio de pedras, a garagem descoberta com pergolado na faixa lateral, a projeção do sobrado recuado e o quintal ao fundo. Calçada e rua na borda inferior. Desenho simplificado, sem mobiliário."
+        },
+        {
+          "titulo": "FUNDAÇÃO E CONTRAPISO",
+          "descricao": "Perspectiva isométrica do sobrado na fase de concretagem: sapatas e vigas baldrame seguindo exatamente as paredes do térreo, pilares aprumados, contrapiso nivelado e tubos aflorando no lavabo, cozinha e área de serviço. Sem pessoas."
+        }
+      ]
+    }
+  ]
+}

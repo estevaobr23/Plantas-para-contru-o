@@ -1,0 +1,96 @@
+Crie UMA prancha de apresentação arquitetônica, formato paisagem 16:9,
+de um projeto residencial brasileiro para terreno pequeno.
+
+=== IDENTIFICAÇÃO DO PROJETO ===
+Nome: Casa Térrea 3 Quartos com Suíte
+Tipo: casa térrea
+Terreno: 10 m de frente × 20 m de fundo (10x20 m)
+Área construída aproximada: 142 m²
+Programa: 3 quarto(s), sendo 1 suíte(s) · 3 banheiro(s) · 2 vaga(s) de garagem coberta
+Partido adotado: Zona íntima recuada ao fundo, social no centro e garagem para dois carros na frente; espaço aberto lateral trazendo luz e ventilação para o miolo da casa.
+
+=== COMPOSIÇÃO DA PRANCHA: UMA única planta baixa, grande, ocupando a maior
+parte da área da prancha, com os painéis de apoio ao lado.
+
+AMBIENTES DA CASA (15 ambientes — desenhar TODOS, nenhum a mais):
+  • Hall de Entrada — A = 4,20 m²
+  • Garagem — A = 32,00 m²
+  • Sala de TV — A = 18,60 m²
+  • Sala de Jantar — A = 11,40 m²
+  • Cozinha — A = 12,80 m²
+  • A.S. — A = 4,60 m²
+  • Circulação — A = 6,80 m²
+  • Dormitório 01 — A = 10,80 m²
+  • Dormitório 02 — A = 10,50 m²
+  • Suíte 03 — A = 12,40 m²
+  • Closet — A = 7,96 m²
+  • Banho 01 — A = 4,10 m²
+  • Banho 02 — A = 3,80 m²
+  • Banho 03 — A = 4,40 m²
+  • Espaço Aberto — A = 22,00 m²
+
+=== ESTILO VISUAL (obrigatório, idêntico em todos os projetos):
+- Planta baixa humanizada vista de cima, projeção ortogonal perfeita (90° exatos,
+  camera perpendicular ao piso). SEM perspectiva, SEM inclinação, SEM isometria na planta.
+- Fundo da prancha: BRANCO PURO (#FFFFFF). Nada de textura, moldura, sombra de papel
+  ou borda decorativa na prancha.
+- Paredes: preenchidas em cinza-escuro sólido (#3A3F45), corte limpo, espessura
+  uniforme e proporcional (parede externa visivelmente mais grossa que a interna).
+- Pisos coloridos por ambiente, em tons realistas e dessaturados:
+  madeira clara nos dormitórios; porcelanato cinza-claro na sala/cozinha/circulação;
+  cerâmica clara nos banheiros e área de serviço; pedrisco/deck no espaço aberto;
+  concreto texturizado na garagem; grama e vegetação no quintal e jardim.
+- Mobiliário desenhado de cima, realista e na escala certa: camas com roupa de cama,
+  guarda-roupas, sofá, mesa de jantar com cadeiras, bancada de cozinha com cooktop e
+  cuba, geladeira, vaso sanitário, pia, box de vidro, máquina de lavar, carros na garagem.
+- Vegetação vista de cima: copas de árvores, arbustos e vasos, em verdes variados.
+- Portas: representadas com o ARCO DE GIRO (quarto de círculo) desenhado.
+- Janelas: vão marcado na parede com linha dupla fina.
+- Sombra suave e coerente projetada pelos móveis e paredes (luz vindo do mesmo
+  canto em toda a prancha).
+- Qualidade de render arquitetônico profissional, bordas nítidas, alta definição.
+
+=== COTAS E ORIENTAÇÃO:
+- A FRENTE do lote (rua) fica SEMPRE na parte INFERIOR da prancha. A entrada
+  principal e a garagem voltam-se para baixo.
+- Desenhe a linha de contorno do lote inteiro (limite do terreno) em traço fino
+  e contínuo, com o recuo visível entre o limite e as paredes da casa.
+- Cote o lote nos dois sentidos, fora do contorno: a largura embaixo e o
+  comprimento na lateral direita, com linha de cota de ponta a ponta,
+  setas nas extremidades e o valor por extenso.
+
+=== TEXTOS DENTRO DA IMAGEM (seguir ao pé da letra):
+- Idioma: PORTUGUÊS DO BRASIL, com acentuação correta.
+- Fonte: sans-serif limpa, fina, cinza-escuro, legível e PEQUENA — o texto nunca
+  domina o desenho.
+- Em cada ambiente, duas linhas centralizadas: o NOME do ambiente e, abaixo,
+  a área no formato "A = 00,00 m²".
+- Escreva EXATAMENTE os nomes e as áreas da lista de ambientes. Não traduza,
+  não abrevie, não arredonde, não invente ambiente que não esteja na lista,
+  não omita nenhum item da lista.
+- Nenhum outro texto na prancha além dos nomes de ambiente, das áreas, dos
+  títulos de painel indicados e das cotas pedidas. SEM logotipo, SEM marca,
+  SEM nome de escritório, SEM assinatura, SEM legenda extra, SEM números de
+  página, SEM marca d'água.
+
+=== PAINÉIS DE APOIO (na mesma prancha, à direita ou abaixo da planta, cada um em
+seu quadro com título pequeno em caixa alta; ocupam no máximo 1/3 da prancha e
+NUNCA cobrem a planta principal):
+  1. "IMPLANTAÇÃO NO LOTE" — Vista superior do terreno inteiro de 10x20 m com a casa implantada, mostrando os recuos frontal, lateral e de fundo em tom claro, a calçada e a rua na borda inferior. Desenho simplificado, sem mobiliário.
+  2. "MARCAÇÃO DA OBRA" — Perspectiva isométrica do terreno limpo na fase inicial: gabarito de madeira nos cantos, linhas de marcação esticadas sobre a terra e as valas das sapatas abertas seguindo exatamente o contorno das paredes da planta. Sem pessoas.
+  3. "FUNDAÇÃO E CONTRAPISO" — Perspectiva isométrica da mesma casa na fase de concretagem: sapatas e vigas baldrame concluídas, contrapiso de concreto nivelado e os tubos de esgoto e água aflorando nos pontos dos banheiros e da cozinha. Sem pessoas.
+
+=== PROIBIDO (qualquer um destes invalida a imagem):
+- Mão humana, caneta, marcador, lápis, régua, mesa, prancheta ou qualquer objeto
+  físico sobre o desenho. A prancha é 100% digital e limpa.
+- Rabisco, anotação manual, seta desenhada à mão ou destaque de marca-texto.
+- Qualquer texto em inglês ou em idioma que não seja português do Brasil.
+- Medida, área ou cota diferente das informadas nesta instrução.
+- Ambiente sem nome ou sem a área escrita.
+- Quarto, banheiro ou suíte acessível somente passando por dentro de outro quarto.
+- Banheiro ou cozinha sem janela ou sem abertura para ventilação.
+- Móvel fora de escala (cama maior que o quarto, carro maior que a garagem).
+- Parede solta que não fecha ambiente, ou ambiente sem porta de acesso.
+- Fundo colorido, gradiente, textura de papel, moldura ou sombra de folha.
+
+Gere a prancha completa, pronta para publicação em um catálogo de projetos.

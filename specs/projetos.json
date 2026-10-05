@@ -1,0 +1,179 @@
+{
+  "_leia": "Ficha técnica dos projetos. TODO número que aparece na imagem sai daqui — o modelo nunca inventa medida. Ao alterar áreas, conferir a soma contra a área construída.",
+  "projetos": [
+    {
+      "id": "p01-terrea-10x20-3q",
+      "nome": "Casa Térrea 3 Quartos com Suíte",
+      "tipo": "terrea",
+      "lote": {
+        "largura": 10,
+        "comprimento": 20
+      },
+      "area_construida": 143,
+      "quartos": 3,
+      "suites": 1,
+      "banheiros": 3,
+      "vagas": 2,
+      "observacao": "Zona íntima recuada ao fundo, social no centro e garagem para dois carros na frente; espaço aberto lateral trazendo luz e ventilação para o miolo da casa.",
+      "ambientes": [
+        {
+          "nome": "Hall de Entrada",
+          "area": "3,61"
+        },
+        {
+          "nome": "Garagem",
+          "area": "27,52"
+        },
+        {
+          "nome": "Sala de TV",
+          "area": "16,00"
+        },
+        {
+          "nome": "Sala de Jantar",
+          "area": "9,80"
+        },
+        {
+          "nome": "Cozinha",
+          "area": "11,01"
+        },
+        {
+          "nome": "A.S.",
+          "area": "3,96"
+        },
+        {
+          "nome": "Circulação",
+          "area": "5,85"
+        },
+        {
+          "nome": "Dormitório 01",
+          "area": "9,29"
+        },
+        {
+          "nome": "Dormitório 02",
+          "area": "9,03"
+        },
+        {
+          "nome": "Suíte 03",
+          "area": "10,66"
+        },
+        {
+          "nome": "Closet",
+          "area": "6,85"
+        },
+        {
+          "nome": "Banho 01",
+          "area": "3,53"
+        },
+        {
+          "nome": "Banho 02",
+          "area": "3,27"
+        },
+        {
+          "nome": "Banho 03",
+          "area": "3,78"
+        },
+        {
+          "nome": "Espaço Aberto",
+          "area": "18,92"
+        }
+      ],
+      "paineis": [
+        {
+          "titulo": "IMPLANTAÇÃO NO LOTE",
+          "descricao": "Vista superior do terreno inteiro de 10x20 m com a casa implantada, mostrando os recuos frontal, lateral e de fundo em tom claro, a calçada e a rua na borda inferior. Desenho simplificado, sem mobiliário."
+        },
+        {
+          "titulo": "FUNDAÇÃO E CONTRAPISO",
+          "descricao": "Perspectiva isométrica da mesma casa na fase de concretagem: sapatas e vigas baldrame concluídas, contrapiso de concreto nivelado e os tubos de esgoto e água aflorando nos pontos dos banheiros e da cozinha. Sem pessoas."
+        }
+      ]
+    },
+    {
+      "id": "p02-terrea-6x25-2q-patio",
+      "nome": "Casa Térrea 2 Quartos com Pátio Central",
+      "tipo": "terrea",
+      "lote": {
+        "largura": 6,
+        "comprimento": 25
+      },
+      "area_construida": 87,
+      "quartos": 2,
+      "suites": 1,
+      "banheiros": 2,
+      "vagas": 1,
+      "observacao": "Lote estreito e comprido resolvido com PÁTIO CENTRAL descoberto no meio da casa, que ilumina e ventila o miolo. Partido invertido em relação ao padrão: garagem e dormitórios na frente, pátio no centro, e a zona social (sala e cozinha integradas) no FUNDO, aberta para o quintal por porta-janela. Circulação encostada na divisa lateral esquerda, liberando toda a faixa direita para os ambientes.",
+      "ambientes": [
+        {
+          "nome": "Garagem",
+          "area": "15,00",
+          "vinculo": "frente do lote, portão para a rua"
+        },
+        {
+          "nome": "Hall de Entrada",
+          "area": "3,20",
+          "vinculo": "porta de entrada vinda da garagem coberta"
+        },
+        {
+          "nome": "Dormitório 01",
+          "area": "10,20",
+          "vinculo": "porta para a circulação lateral"
+        },
+        {
+          "nome": "Suíte 02",
+          "area": "12,60",
+          "vinculo": "porta para a circulação lateral"
+        },
+        {
+          "nome": "Banho Suíte",
+          "area": "3,90",
+          "vinculo": "privativo da Suíte 02 — porta somente dentro da suíte, no fundo dela"
+        },
+        {
+          "nome": "Banho Social",
+          "area": "3,40",
+          "vinculo": "porta para a circulação, junto ao Dormitório 01, longe do Banho Suíte"
+        },
+        {
+          "nome": "Circulação",
+          "area": "7,80",
+          "vinculo": "faixa estreita na divisa esquerda, ligando frente, pátio e fundo"
+        },
+        {
+          "nome": "Pátio Central",
+          "area": "9,00",
+          "vinculo": "descoberto, no meio da casa; porta-janela da sala e janelas dos quartos voltadas para ele"
+        },
+        {
+          "nome": "Sala de Estar",
+          "area": "16,40",
+          "vinculo": "no fundo, integrada à cozinha, porta-janela para o quintal"
+        },
+        {
+          "nome": "Cozinha",
+          "area": "11,20",
+          "vinculo": "integrada à sala, bancada junto à parede da divisa"
+        },
+        {
+          "nome": "A.S.",
+          "area": "3,30",
+          "vinculo": "atrás da cozinha, porta para o quintal"
+        },
+        {
+          "nome": "Quintal",
+          "area": "18,00",
+          "vinculo": "fundo do lote, gramado, acessado pela porta-janela da sala"
+        }
+      ],
+      "paineis": [
+        {
+          "titulo": "IMPLANTAÇÃO NO LOTE",
+          "descricao": "Vista superior do terreno estreito de 6x25 m com a casa implantada, mostrando o recuo frontal da garagem, as paredes encostadas nas divisas laterais, o pátio central descoberto como um vazio no meio e o quintal ao fundo. Calçada e rua na borda inferior. Desenho simplificado, sem mobiliário."
+        },
+        {
+          "titulo": "FUNDAÇÃO E CONTRAPISO",
+          "descricao": "Perspectiva isométrica da mesma casa na fase de concretagem: sapatas e vigas baldrame concluídas seguindo exatamente as paredes da planta, contrapiso de concreto nivelado, o vazio do pátio central deixado sem contrapiso, e os tubos de esgoto e água aflorando nos pontos dos dois banheiros, da cozinha e da área de serviço. Sem pessoas."
+        }
+      ]
+    }
+  ]
+}

@@ -1643,6 +1643,78 @@ section{ padding:92px 0; }
   .inside .flip-embed .fp-iframe{ height:min(150vw, 680px); border-radius:11px; } /* proporção vertical */
   .inside .flip-hint{ padding-inline:22px; }
 }
+
+/* ===== 7. LABORATÓRIO DO LOTE ===== */
+.lab{ position:relative; padding:96px 0; background-color:var(--paper);
+  background-image:linear-gradient(var(--grid-line) 1px,transparent 1px),linear-gradient(90deg,var(--grid-line) 1px,transparent 1px);
+  background-size:24px 24px; overflow:hidden; }
+.lab-chips{ display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin:-18px auto 34px; max-width:720px; }
+.lab-chip{ font-family:var(--font-num); font-weight:700; font-size:.98rem; color:var(--navy);
+  background:#fff; border:2px solid var(--linen-deep); border-radius:var(--radius-pill);
+  padding:11px 20px; cursor:pointer; transition:transform .2s, background .25s, color .25s, border-color .25s, box-shadow .25s; }
+.lab-chip:hover{ border-color:var(--cota); transform:translateY(-2px); }
+.lab-chip:focus-visible{ outline:3px solid var(--cota-light); outline-offset:2px; }
+.lab-chip[aria-pressed="true"]{ background:var(--navy); border-color:var(--navy); color:#fff;
+  box-shadow:0 10px 24px hsla(205,62%,20%,.28); }
+.lab-stage{ display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.1fr); gap:34px; align-items:center;
+  background:#fff; border:1px solid var(--linen-deep); border-radius:var(--radius-lg);
+  box-shadow:var(--shadow-medium); padding:30px; max-width:920px; margin:0 auto; }
+.lab-board{ background:var(--navy-deep); border-radius:var(--radius-md); padding:14px; color:#9fdcf5; }
+.lab-svg{ display:block; width:100%; height:auto; max-height:420px; }
+.lab-street{ fill:hsla(199,40%,60%,.14); }
+.lab-street-t{ fill:#9fdcf5; font:700 11px var(--font-num); letter-spacing:.3em; text-anchor:middle; opacity:.7; }
+.lab-lot-r{ fill:hsla(199,78%,40%,.12); stroke:var(--alert); stroke-width:2.2; stroke-dasharray:7 5; }
+.lab-house{ fill:hsla(195,85%,78%,.22); stroke:#9fdcf5; stroke-width:1.6; }
+.lab-car{ fill:none; stroke:var(--code); stroke-width:1.6; }
+.lab-dim{ stroke:#9fdcf5; stroke-width:1.3; }
+.lab-dim-t{ fill:#fff; font:800 17px var(--font-num); text-anchor:middle; }
+.lab-dim-v{ text-anchor:start; font-size:13px; font-weight:700; fill:#9fdcf5; }
+.lab-draw .lab-lot-r, .lab-draw .lab-house, .lab-draw .lab-car{ animation:labDraw .9s ease-out both; }
+.lab-draw .lab-house{ animation-delay:.15s; } .lab-draw .lab-car{ animation-delay:.3s; }
+@keyframes labDraw{ from{ opacity:0; } to{ opacity:1; } }
+.lab-count{ display:flex; align-items:center; gap:14px; margin-bottom:22px; }
+.lab-num{ font-family:var(--font-display); font-weight:800; font-size:clamp(3.6rem,8vw,5.2rem); line-height:.9;
+  color:var(--code); font-variant-numeric:tabular-nums; min-width:2ch; }
+.lab-unit{ font-family:var(--font-num); font-weight:700; color:var(--text-dark); font-size:1.05rem; line-height:1.25; }
+.lab-bars{ display:grid; gap:12px; margin-bottom:22px; }
+.lab-bar{ display:grid; grid-template-columns:78px 1fr 30px; align-items:center; gap:10px;
+  font-family:var(--font-num); font-weight:600; color:var(--text-body); font-size:.92rem; }
+.lab-bar-t{ height:12px; background:var(--cota-soft); border-radius:99px; overflow:hidden; }
+.lab-fill{ display:block; height:100%; width:0; border-radius:99px; transition:width .8s cubic-bezier(.2,.8,.2,1); }
+.lab-fill.t{ background:var(--cota); } .lab-fill.s{ background:var(--navy); }
+.lab-bar-n{ color:var(--text-dark); text-align:right; }
+.lab-facts{ list-style:none; margin:0; padding:0; border-top:1px dashed var(--linen-deep); }
+.lab-facts li{ display:flex; justify-content:space-between; gap:12px; padding:11px 0; border-bottom:1px dashed var(--linen-deep); font-size:.95rem; }
+.lab-facts span{ color:var(--text-muted); } .lab-facts b{ color:var(--text-dark); font-family:var(--font-num); text-align:right; }
+.lab-strip-h{ text-align:center; margin:44px 0 16px; font-family:var(--font-num); font-weight:700; color:var(--cota-dark);
+  text-transform:uppercase; letter-spacing:.12em; font-size:.8rem; }
+.lab-strip{ display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; max-width:980px; margin:0 auto; }
+.lab-card{ background:#fff; border:1px solid var(--linen-deep); border-radius:var(--radius-md); overflow:hidden;
+  box-shadow:0 6px 18px hsla(205,45%,15%,.08); animation:labIn .5s ease-out both; }
+.lab-card:nth-child(2){ animation-delay:.07s } .lab-card:nth-child(3){ animation-delay:.14s } .lab-card:nth-child(4){ animation-delay:.21s }
+@keyframes labIn{ from{ opacity:0; transform:translateY(14px) scale(.98); } to{ opacity:1; transform:none; } }
+.lab-card img{ display:block; width:100%; aspect-ratio:16/9; object-fit:cover; background:var(--cota-soft); }
+.lab-card div{ padding:10px 12px 12px; }
+.lab-card small{ display:block; font-family:var(--font-num); font-weight:700; color:var(--code-dark); font-size:.72rem; letter-spacing:.06em; }
+.lab-card strong{ display:block; color:var(--text-dark); font-size:.88rem; line-height:1.3; margin-top:3px; }
+.lab-stats{ display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; max-width:920px; margin:52px auto 0; }
+.lab-stats div{ background:var(--navy); color:#fff; border-radius:var(--radius-md); padding:20px 14px; text-align:center; }
+.lab-stats b{ display:block; font-family:var(--font-display); font-weight:800; font-size:clamp(1.5rem,3.4vw,2.1rem); color:var(--alert); font-variant-numeric:tabular-nums; }
+.lab-stats span{ display:block; margin-top:4px; font-size:.86rem; color:hsla(0,0%,100%,.82); }
+.lab-stats .hot{ background:var(--code); } .lab-stats .hot b{ color:#fff; }
+.lab-cta{ text-align:center; margin-top:38px; }
+@media (max-width:860px){
+  .lab{ padding:72px 0; }
+  .lab-stage{ grid-template-columns:1fr; padding:18px; gap:22px; }
+  .lab-board{ max-width:340px; margin:0 auto; width:100%; }
+  .lab-strip{ grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+  .lab-stats{ grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .lab-chip{ padding:10px 16px; font-size:.92rem; }
+}
+@media (prefers-reduced-motion:reduce){
+  .lab-draw .lab-lot-r, .lab-draw .lab-house, .lab-draw .lab-car, .lab-card{ animation:none; }
+  .lab-fill{ transition:none; }
+}
 </style>
 </head>
 <body>
@@ -2071,39 +2143,84 @@ section{ padding:92px 0; }
   </div>
 </section>
 
-<!-- ===== 7. NA PRÁTICA (casos de uso; sem depoimentos de clientes até haver relatos reais) ===== -->
-<section class="testi">
+<!-- ===== 7. LABORATÓRIO DO LOTE — escolha a largura e veja os projetos (dados reais da biblioteca) ===== -->
+<section class="lab" id="seu-lote">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">Na prática</span>
-      <h2>Como a biblioteca <span class="hl">entra no seu projeto</span></h2>
+      <span class="eyebrow">Teste com o seu terreno</span>
+      <h2>Qual a largura do <span class="hl">seu lote</span>?</h2>
       <div class="rule"></div>
+      <p>Toque na medida da frente do terreno e veja na hora quantos projetos da biblioteca foram desenhados para ele.</p>
     </div>
 
-    <div class="grid-testi">
-      <div class="testi-card reveal">
-        <div class="testi-head">
-          <span class="name">Lote 5x20 parado</span>
-          <span class="meta">Para quem tem terreno</span>
-        </div>
-        <p class="quote">Folheie os projetos do seu tamanho de lote e veja se cabe <strong>um sobrado com garagem</strong>. Leve a ideia pronta para o engenheiro.</p>
+    <div class="lab-chips" role="group" aria-label="Largura do lote">
+      <button type="button" class="lab-chip" data-g="0" aria-pressed="false">4 a 5 m</button>
+      <button type="button" class="lab-chip" data-g="1" aria-pressed="true">6 m</button>
+      <button type="button" class="lab-chip" data-g="2" aria-pressed="false">7 m</button>
+      <button type="button" class="lab-chip" data-g="3" aria-pressed="false">8 m</button>
+      <button type="button" class="lab-chip" data-g="4" aria-pressed="false">9 a 10 m</button>
+      <button type="button" class="lab-chip" data-g="5" aria-pressed="false">11 m ou mais</button>
+    </div>
+
+    <div class="lab-stage reveal">
+      <div class="lab-board" aria-hidden="true">
+        <svg viewBox="0 0 320 380" class="lab-svg">
+          <defs>
+            <pattern id="labGrid" width="12" height="12" patternUnits="userSpaceOnUse">
+              <path d="M12 0H0V12" fill="none" stroke="currentColor" stroke-width=".5" opacity=".18"/>
+            </pattern>
+            <marker id="labArr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0 0L10 5L0 10z" fill="#9fdcf5"/>
+            </marker>
+          </defs>
+          <rect width="320" height="380" fill="url(#labGrid)"/>
+          <rect class="lab-street" x="0" y="344" width="320" height="36"/>
+          <text class="lab-street-t" x="160" y="367">RUA</text>
+          <g class="lab-lot">
+            <rect class="lab-lot-r" x="124" y="64" width="72" height="276"/>
+            <rect class="lab-house" x="128" y="120" width="64" height="170"/>
+            <rect class="lab-car" x="132" y="300" width="22" height="34" rx="4"/>
+          </g>
+          <g class="lab-cota-w">
+            <line class="lab-dim" x1="124" y1="44" x2="196" y2="44" marker-start="url(#labArr)" marker-end="url(#labArr)"/>
+            <text class="lab-dim-t" x="160" y="32">6 m</text>
+          </g>
+          <g class="lab-cota-h">
+            <line class="lab-dim" x1="216" y1="64" x2="216" y2="340" marker-start="url(#labArr)" marker-end="url(#labArr)"/>
+            <text class="lab-dim-t lab-dim-v" x="226" y="206">20 a 30 m</text>
+          </g>
+        </svg>
       </div>
-      <div class="testi-card reveal delay-1">
-        <div class="testi-head">
-          <span class="name">Construir para alugar</span>
-          <span class="meta">Para quem investe</span>
+
+      <div class="lab-info" aria-live="polite">
+        <div class="lab-count"><span class="lab-num">0</span><span class="lab-unit">projetos<br/>para esta largura</span></div>
+        <div class="lab-bars">
+          <div class="lab-bar"><span class="lab-bar-l">Térreas</span><span class="lab-bar-t"><i class="lab-fill t"></i></span><b class="lab-bar-n" data-k="t">0</b></div>
+          <div class="lab-bar"><span class="lab-bar-l">Sobrados</span><span class="lab-bar-t"><i class="lab-fill s"></i></span><b class="lab-bar-n" data-k="s">0</b></div>
         </div>
-        <p class="quote">Compare plantas de <strong>duas unidades no mesmo lote</strong> e decida o formato antes de contratar o projeto.</p>
-      </div>
-      <div class="testi-card reveal delay-2">
-        <div class="testi-head">
-          <span class="name">Mostrar opções ao cliente</span>
-          <span class="meta">Para quem vende ou projeta</span>
-        </div>
-        <p class="quote">Use plantas e fachadas como <strong>opções visuais</strong> antes de fechar com o arquiteto. A primeira reunião anda mais rápido.</p>
+        <ul class="lab-facts">
+          <li><span>Quartos</span><b class="lab-q">—</b></li>
+          <li><span>Área construída</span><b class="lab-a">—</b></li>
+          <li><span>Comprimentos de lote</span><b class="lab-c">—</b></li>
+        </ul>
       </div>
     </div>
+
+    <p class="lab-strip-h">Alguns projetos para esta largura</p>
+    <div class="lab-strip"></div>
+
+    <div class="lab-stats">
+      <div><b data-to="100">0</b><span>projetos completos</span></div>
+      <div><b data-to="26">0</b><span>tamanhos de lote</span></div>
+      <div><b data-to="12134" data-fmt="m2">0</b><span>de área projetada</span></div>
+      <div class="hot"><b>R$ 0,30</b><span>menos que isso por projeto</span></div>
+    </div>
+
+    <div class="lab-cta">
+      <a href="#comprar" class="btn btn-buy btn-lg">Quero os 100 projetos <span class="arrow">➔</span></a>
+    </div>
   </div>
+  <script type="application/json" id="labData">[[1,"Casa Térrea 3 Quartos com Suíte","t",10,20,3,143,"p01-terrea-10x20-3q"],[2,"Casa Térrea 2 Quartos com Pátio Central","t",6,25,2,87,"p02-terrea-6x25-2q-patio"],[3,"Casa Térrea Compacta 1 Quarto","t",5,20,1,42,"p03-terrea-5x20-1q"],[4,"Casa Térrea 2 Quartos com Varanda","t",6,20,2,75,"p04-terrea-6x20-2q"],[5,"Casa Térrea 3 Quartos com Área Gourmet","t",7,20,3,101,"p05-terrea-7x20-3q-gourmet"],[6,"Casa Térrea 2 Quartos para Lote Estreito","t",5,25,2,74,"p06-terrea-5x25-2q-estreita"],[7,"Casa Térrea 3 Quartos com Suíte e Jardim Interno","t",8,20,3,114,"p07-terrea-8x20-3q-suite"],[8,"Casa Térrea 2 Quartos Voltada para o Fundo","t",7,25,2,89,"p08-terrea-7x25-2q-fundos"],[9,"Casa Térrea 4 Quartos para Família Grande","t",10,20,4,143,"p09-terrea-10x20-4q"],[10,"Casa de Fundos 1 Quarto","t",6,30,1,40,"p10-terrea-6x30-fundos"],[11,"Duas Casas Geminadas de 2 Quartos","t",12,20,2,133,"p11-terrea-12x20-geminadas"],[12,"Três Unidades de 1 Quarto para Aluguel","t",7,25,1,104,"p12-terrea-7x25-aluguel"],[13,"Sobrado 3 Quartos com Garagem","s",5,20,3,109,"p13-sobrado-5x20-3q"],[14,"Sobrado 2 Suítes com Terraço","s",6,20,2,126,"p14-sobrado-6x20-2suites"],[15,"Sobrado para Lote Muito Estreito","s",4.5,25,2,93,"p15-sobrado-45x25-estreito"],[16,"Sobrado 4 Quartos com Suíte Master","s",7,20,4,167,"p16-sobrado-7x20-4q"],[17,"Sobrado de Esquina com Duas Frentes","s",8,20,3,152,"p17-sobrado-8x20-esquina"],[18,"Sobrado Duplex com Piscina","s",10,20,3,175,"p18-sobrado-10x20-duplex"],[19,"Sobrado com Ponto Comercial no Térreo","s",6,25,3,153,"p19-sobrado-6x25-comercio"],[20,"Dois Sobrados Geminados de 2 Quartos","s",12,20,2,190,"p20-sobrado-12x20-geminados"],[21,"Sobrado Compacto 2 Quartos para Aluguel","s",5,25,2,88,"p21-sobrado-5x25-compacto"],[22,"Sobrado com Jardim Frontal Recuado","s",7,25,3,149,"p22-sobrado-7x25-recuado"],[23,"Casa Térrea com Ponto Comercial na Frente","t",8,20,2,114,"p23-terrea-8x20-comercio"],[24,"Duas Casas Frente e Fundos no Mesmo Lote","t",10,25,2,121,"p24-terrea-10x25-frente-fundos"],[25,"Casa Térrea Acessível 3 Quartos","t",9,20,3,129,"p25-terrea-9x20-acessivel"],[26,"Sobrado com Escritório Integrado","s",6,20,2,125,"p26-sobrado-6x20-escritorio"],[27,"Quatro Kitnets no Mesmo Lote","t",6,20,1,86,"p27-terrea-6x20-kitnets"],[28,"Casa Térrea 2 Quartos com Jardim Lateral","t",7,20,2,86,"p28-terrea-7x20-2q-jardim"],[29,"Sobrado com Três Unidades de Aluguel","s",8,25,2,167,"p29-sobrado-8x25-tres-unidades"],[30,"Casa Térrea com Edícula nos Fundos","t",11,20,3,158,"p30-terrea-11x20-conjugada"],[31,"Casa Térrea 2 Quartos Linear","t",5,25,2,80,"p31-terrea-5x25-linear"],[32,"Casa Térrea 3 Quartos Linear","t",6,30,3,101,"p32-terrea-6x30-linear"],[33,"Casa Térrea 1 Quarto Linear","t",4.5,25,1,55,"p33-terrea-45x25-linear"],[34,"Casa Térrea 2 Quartos Linear","t",5,30,2,89,"p34-terrea-5x30-linear"],[35,"Casa Térrea 3 Quartos com Pátio Interno","t",7,25,3,102,"p35-terrea-7x25-patio"],[36,"Casa Térrea 3 Quartos com Pátio Interno","t",8,25,3,127,"p36-terrea-8x25-patio"],[37,"Casa Térrea 2 Quartos com Pátio Interno","t",6,30,2,89,"p37-terrea-6x30-patio"],[38,"Casa Térrea 2 Quartos com Social nos Fundos","t",6,25,2,81,"p38-terrea-6x25-fundo"],[39,"Casa Térrea 3 Quartos com Social nos Fundos","t",8,25,3,114,"p39-terrea-8x25-fundo"],[40,"Casa Térrea 3 Quartos com Social nos Fundos","t",9,25,3,135,"p40-terrea-9x25-fundo"],[41,"Casa Térrea 2 Quartos com Jardim Lateral","t",8,20,2,102,"p41-terrea-8x20-jardimlateral"],[42,"Casa Térrea 3 Quartos com Jardim Lateral","t",9,25,3,128,"p42-terrea-9x25-jardimlateral"],[43,"Casa Térrea 3 Quartos com Jardim Lateral","t",7,30,3,102,"p43-terrea-7x30-jardimlateral"],[44,"Casa Térrea 3 Quartos em L","t",10,25,3,135,"p44-terrea-10x25-eml"],[45,"Casa Térrea 4 Quartos em L","t",12,25,4,155,"p45-terrea-12x25-eml"],[46,"Casa Térrea 3 Quartos em L","t",11,25,3,143,"p46-terrea-11x25-eml"],[47,"Casa Térrea 2 Quartos com Varanda Frontal","t",5,20,2,70,"p47-terrea-5x20-varanda"],[48,"Casa Térrea 3 Quartos com Varanda Frontal","t",7,25,3,102,"p48-terrea-7x25-varanda"],[49,"Casa Térrea 2 Quartos com Varanda Frontal","t",9,20,2,116,"p49-terrea-9x20-varanda"],[50,"Casa Térrea 2 Quartos com Área Gourmet","t",6,25,2,89,"p50-terrea-6x25-gourmet"],[51,"Casa Térrea 3 Quartos com Área Gourmet","t",8,25,3,127,"p51-terrea-8x25-gourmet"],[52,"Casa Térrea 3 Quartos com Área Gourmet","t",10,30,3,137,"p52-terrea-10x30-gourmet"],[53,"Casa Térrea 3 Quartos de Esquina","t",8,20,3,112,"p53-terrea-8x20-esquinat"],[54,"Casa Térrea 3 Quartos de Esquina","t",10,20,3,129,"p54-terrea-10x20-esquinat"],[55,"Casa Térrea 2 Quartos de Esquina","t",9,25,2,103,"p55-terrea-9x25-esquinat"],[56,"Casa Térrea 4 Quartos de Esquina","t",12,25,4,150,"p56-terrea-12x25-esquinat"],[57,"Sobrado 3 Quartos com Escada na Divisa","s",5,25,3,114,"p57-sobrado-5x25-sobdivisa"],[58,"Sobrado 3 Quartos com Escada na Divisa","s",6,25,3,116,"p58-sobrado-6x25-sobdivisa"],[59,"Sobrado 3 Quartos com Escada na Divisa","s",7,20,3,140,"p59-sobrado-7x20-sobdivisa"],[60,"Sobrado 2 Quartos com Escada na Divisa","s",4.5,20,2,94,"p60-sobrado-45x20-sobdivisa"],[61,"Sobrado 2 Quartos com Terraço","s",5,20,2,107,"p61-sobrado-5x20-sobterraco"],[62,"Sobrado 3 Quartos com Terraço","s",7,25,3,139,"p62-sobrado-7x25-sobterraco"],[63,"Sobrado 3 Quartos com Terraço","s",8,20,3,146,0],[64,"Sobrado 3 Quartos com Vazio de Luz","s",5,30,3,114,"p64-sobrado-5x30-sobvazio"],[65,"Sobrado 3 Quartos com Vazio de Luz","s",6,30,3,116,0],[66,"Sobrado 2 Quartos com Vazio de Luz","s",4,25,2,101,0],[67,"Sobrado 3 Quartos com Pé-Direito Duplo","s",8,25,3,146,0],[68,"Sobrado 4 Quartos com Pé-Direito Duplo","s",10,25,4,161,0],[69,"Sobrado 3 Quartos com Pé-Direito Duplo","s",9,20,3,154,0],[70,"Sobrado 3 Quartos com Jardim Frontal","s",8,25,3,146,0],[71,"Sobrado 2 Quartos com Jardim Frontal","s",6,30,2,108,0],[72,"Sobrado 4 Quartos com Jardim Frontal","s",10,30,4,167,0],[73,"Sobrado 2 Quartos com Escritório","s",7,20,2,127,0],[74,"Sobrado 3 Quartos com Escritório","s",8,25,3,140,0],[75,"Sobrado 2 Quartos com Escritório","s",5,25,2,114,0],[76,"Sobrado 2 Quartos com Gourmet no Terraço","s",5,20,2,102,0],[77,"Sobrado 3 Quartos com Gourmet no Terraço","s",6,25,3,116,0],[78,"Sobrado 3 Quartos com Gourmet no Terraço","s",7,30,3,147,0],[79,"Sobrado 3 Quartos de Esquina","s",7,20,3,132,0],[80,"Sobrado 4 Quartos de Esquina","s",10,20,4,167,0],[81,"Sobrado 3 Quartos de Esquina","s",9,25,3,147,0],[82,"Sobrado 2 Quartos de Esquina","s",6,20,2,108,0],[83,"Duas Casas Geminadas de 2 Quartos","t",10,20,2,129,0],[84,"Duas Casas Geminadas de 2 Quartos","t",10,25,2,129,0],[85,"Duas Casas Geminadas de 3 Quartos","t",14,25,3,147,0],[86,"Dois Sobrados Geminados de 2 Quartos","s",10,20,2,154,0],[87,"Dois Sobrados Geminados de 3 Quartos","s",10,25,3,172,0],[88,"Dois Sobrados Geminados de 3 Quartos","s",12,25,3,172,0],[89,"6 Kitnets no Mesmo Lote","t",8,25,1,122,0],[90,"8 Kitnets no Mesmo Lote","t",10,30,1,161,0],[91,"3 Unidades de 1 Quarto para Aluguel","t",6,30,1,88,0],[92,"3 Unidades de 2 Quartos para Aluguel","t",8,30,2,118,0],[93,"4 Unidades de 1 Quarto para Aluguel","t",7,35,1,117,0],[94,"Casa de 2 Quartos com Casa de Fundos","t",8,30,2,99,0],[95,"Casa de 3 Quartos com Casa de Fundos","t",10,30,3,109,0],[96,"Casa Térrea 2 Quartos com Loja na Frente","t",10,20,2,119,0],[97,"Casa Térrea 2 Quartos com Loja na Frente","t",9,25,2,114,0],[98,"Sobrado 2 Quartos com Loja no Térreo","s",5,25,2,114,0],[99,"Sobrado 3 Quartos com Loja no Térreo","s",7,25,3,136,0],[100,"Casa com Dois Apartamentos em Cima","s",10,25,2,159,0]]</script>
 </section>
 
 <!-- ===== 8. OFERTA ===== -->
@@ -2360,6 +2477,107 @@ section{ padding:92px 0; }
   window.addEventListener('scroll', onScroll, { passive:true });
   window.addEventListener('resize', onScroll, { passive:true });
   update();
+})();
+</script>
+<script>
+/* 7. LABORATÓRIO DO LOTE */
+(function(){
+  var root=document.getElementById('seu-lote'); if(!root) return;
+  var D=JSON.parse(document.getElementById('labData').textContent);
+  /* cada item: [número, nome, tipo t/s, largura, comprimento, quartos, área, id da miniatura ou 0] */
+  var G=[ {min:4,max:5,w:5,r:'4 a 5 m'}, {min:6,max:6,w:6,r:'6 m'}, {min:7,max:7,w:7,r:'7 m'},
+          {min:8,max:8,w:8,r:'8 m'}, {min:9,max:10,w:10,r:'9 a 10 m'}, {min:11,max:99,w:12,r:'11 m +'} ];
+  var calmo=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function $(s){ return root.querySelector(s); }
+  var num=$('.lab-num'), lot=$('.lab-lot-r'), house=$('.lab-house'), car=$('.lab-car'),
+      dim=$('.lab-cota-w line'), dimT=$('.lab-cota-w text'), dimH=$('.lab-cota-h'), board=$('.lab-svg');
+  var curW=6, cur=0;
+
+  function tween(from,to,ms,cb){
+    if(calmo){ cb(to); return; }
+    var t0=null;
+    function f(t){ if(!t0) t0=t; var k=Math.min(1,(t-t0)/ms); k=1-Math.pow(1-k,3);
+      cb(from+(to-from)*k); if(k<1) requestAnimationFrame(f); }
+    requestAnimationFrame(f);
+  }
+  function faixa(a,b,suf){ return a===b ? a+suf : a+' a '+b+suf; }
+  function tres(n){ return ('00'+n).slice(-3); }
+  function med(v){ return String(v).replace('.',','); }
+
+  /* desenha o terreno com a largura proporcional (12 px por metro) */
+  function lote(w){
+    var W=Math.min(w*12,176), x=160-W/2;
+    lot.setAttribute('x',x); lot.setAttribute('width',W);
+    house.setAttribute('x',x+4); house.setAttribute('width',Math.max(W-8,10));
+    car.setAttribute('x',x+8);
+    dim.setAttribute('x1',x); dim.setAttribute('x2',x+W);
+    dimH.setAttribute('transform','translate('+Math.max(0,(x+W+14)-216)+',0)');
+  }
+
+  function mostrar(gi){
+    var g=G[gi], L=D.filter(function(p){ return p[3]>=g.min && p[3]<=g.max; });
+    var t=L.filter(function(p){ return p[2]==='t'; }).length, s=L.length-t;
+    var q=L.map(function(p){ return p[5]; }), a=L.map(function(p){ return p[6]; });
+    var c=L.map(function(p){ return p[4]; }).filter(function(v,i,arr){ return arr.indexOf(v)===i; }).sort(function(x,y){ return x-y; });
+
+    var de=cur; cur=L.length;
+    tween(de,cur,700,function(v){ num.textContent=Math.round(v); });
+    $('.lab-fill.t').style.width=(L.length ? t/L.length*100 : 0)+'%';
+    $('.lab-fill.s').style.width=(L.length ? s/L.length*100 : 0)+'%';
+    $('[data-k="t"]').textContent=t;
+    $('[data-k="s"]').textContent=s;
+    $('.lab-q').textContent=faixa(Math.min.apply(0,q),Math.max.apply(0,q),' quartos');
+    $('.lab-a').textContent=faixa(Math.min.apply(0,a),Math.max.apply(0,a),' m²');
+    $('.lab-c').textContent=c.join(', ')+' m';
+    dimT.textContent=g.r;
+    tween(curW,g.w,650,function(v){ curW=v; lote(v); });
+    board.classList.remove('lab-draw'); void board.getBoundingClientRect(); board.classList.add('lab-draw');
+
+    /* até 4 projetos com planta pronta, alternando térrea e sobrado */
+    var com=L.filter(function(p){ return p[7]; }),
+        tt=com.filter(function(p){ return p[2]==='t'; }), ss=com.filter(function(p){ return p[2]==='s'; }), pick=[];
+    while(pick.length<4 && (tt.length||ss.length)){
+      if(tt.length) pick.push(tt.shift());
+      if(pick.length<4 && ss.length) pick.push(ss.shift());
+    }
+    var strip=$('.lab-strip'); strip.innerHTML='';
+    pick.forEach(function(p){
+      var el=document.createElement('div'); el.className='lab-card';
+      el.innerHTML='<img loading="lazy" decoding="async" alt=""><div><small></small><strong></strong></div>';
+      var img=el.querySelector('img');
+      img.src='miniaturas/'+p[7]+'.webp';
+      img.alt='Planta baixa do projeto '+tres(p[0])+', lote '+med(p[3])+'x'+p[4];
+      el.querySelector('small').textContent='PROJETO '+tres(p[0])+' · LOTE '+med(p[3])+'X'+p[4];
+      el.querySelector('strong').textContent=p[1];
+      strip.appendChild(el);
+    });
+    $('.lab-strip-h').hidden=!pick.length;
+  }
+
+  var chips=root.querySelectorAll('.lab-chip');
+  chips.forEach(function(b){
+    b.addEventListener('click',function(){
+      chips.forEach(function(x){ x.setAttribute('aria-pressed', x===b ? 'true' : 'false'); });
+      mostrar(+b.getAttribute('data-g'));
+    });
+  });
+
+  /* primeira exibição e contadores quando a seção entra na tela */
+  var iniciou=false;
+  function iniciar(){
+    if(iniciou) return; iniciou=true;
+    mostrar(1);
+    root.querySelectorAll('.lab-stats b[data-to]').forEach(function(b){
+      var to=+b.getAttribute('data-to'), m2=b.getAttribute('data-fmt')==='m2';
+      tween(0,to,1400,function(v){ var n=Math.round(v).toLocaleString('pt-BR'); b.textContent=m2 ? n+' m²' : n; });
+    });
+  }
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ iniciar(); io.disconnect(); } });
+    },{ threshold:.15 });
+    io.observe(root);
+  } else iniciar();
 })();
 </script>
 </body>

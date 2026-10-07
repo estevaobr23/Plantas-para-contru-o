@@ -15,16 +15,14 @@
 <meta name="twitter:description" content="Ideias para construir, vender ou alugar em terrenos pequenos." />
 <meta name="twitter:image" content="https://catalogo-100-projetos-casas.brito12mn.chatgpt.site/og.png" />
 
-<!-- Pixel Utmify — trocar [PIXEL_ID] pelo id do produto (só carrega quando preenchido) -->
+<!-- Pixel Utmify -->
 <script>
-  window.pixelId = "[PIXEL_ID]";
-  if(window.pixelId.charAt(0) !== "["){
-    var a = document.createElement("script");
-    a.setAttribute("async","");
-    a.setAttribute("defer","");
-    a.setAttribute("src","https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-    document.head.appendChild(a);
-  }
+  window.pixelId = "6ac5a4f3e1d1d2a7b3d4b867";
+  var a = document.createElement("script");
+  a.setAttribute("async","");
+  a.setAttribute("defer","");
+  a.setAttribute("src","https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -276,21 +274,19 @@ section{ padding:84px 0; position:relative; }
   transition:var(--transition); position:relative; overflow:hidden;
 }
 .desire-card:hover{ transform:translateY(-6px); box-shadow:var(--shadow-medium); }
+/* Fachada renderizada do projeto identificado no card, em proporção 4:3. */
 .desire-card .card-img{
-  display:block; width:calc(100% + 52px); max-width:none; margin:-30px -26px 22px;
+  display:block; width:calc(100% + 52px); max-width:none; margin:-30px -26px 20px;
   aspect-ratio:4 / 3; object-fit:cover; background:#fff; object-position:center;
   border-bottom:1px solid var(--border);
-  -webkit-mask-image:linear-gradient(180deg,#000 84%,transparent);
-          mask-image:linear-gradient(180deg,#000 84%,transparent);
 }
 .desire-card .card-img.ph{ border-radius:0; border-width:0 0 2px; padding-bottom:30px; }
 .desire-card--wide{ grid-column:span 3; display:flex; gap:30px; align-items:center;
   background:var(--linen); border-color:var(--linen-deep); }
 .desire-card--wide .card-img{
   width:56%; flex:0 0 56%; margin:-30px 0 -30px -26px;
-  align-self:stretch; aspect-ratio:auto; min-height:300px; height:auto; object-position:center;
-  -webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);
-          mask-image:linear-gradient(90deg,#000 88%,transparent);
+  align-self:stretch; aspect-ratio:auto; min-height:320px; height:auto;
+  object-fit:cover; object-position:center; background:var(--bg-marfim);
   border-bottom:none; border-right:1px solid var(--border);
 }
 .desire-card--wide .card-img.ph{ border-width:0 2px 0 0; padding:24px 44px 24px 24px; }
@@ -307,20 +303,6 @@ section{ padding:84px 0; position:relative; }
 .desire-card .quote{ display:block; margin-top:14px; font-family:var(--font-num); font-size:.84rem;
   font-weight:600; color:var(--cota-dark); border-left:3px solid var(--cota); padding-left:12px; }
 
-/* carrossel de fachadas (antes da faixa numérica) */
-.life-marquee{ margin-top:40px; display:flex; flex-direction:column; gap:12px; }
-.life-row{ overflow-x:clip; overflow-y:visible;
-  -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
-          mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent); }
-.life-track{ display:flex; gap:18px; width:max-content; will-change:transform; padding:8px 0; }
-.life-left { animation:pm-scroll-left  40s linear infinite; }
-.life-right{ animation:pm-scroll-right 40s linear infinite; }
-.life-marquee:hover .life-track{ animation-play-state:paused; }
-.life-img{ display:block; height:200px; width:auto; flex:none;
-  border-radius:var(--radius-md); border:1px solid var(--border);
-  box-shadow:0 6px 18px hsla(205,30%,20%,.12); object-fit:cover; background:#fff; }
-.life-img.ph{ aspect-ratio:4/3; font-size:.74rem; padding:14px; }
-
 .desire-strip{
   --scroll: 0;
   margin-top:48px; max-width:760px; margin-inline:auto; text-align:center;
@@ -328,8 +310,8 @@ section{ padding:84px 0; position:relative; }
   background:
     radial-gradient(760px 240px at 50% -40%, hsla(0,0%,100%,.45), transparent 72%),
     linear-gradient(150deg, var(--alert-light), var(--alert) 55%, var(--alert-deep));
-  border:2px solid var(--navy-deep);
-  box-shadow:8px 8px 0 var(--navy-deep);
+  border:1px solid hsla(0,0%,100%,.25);
+  box-shadow:var(--shadow-large);
   overflow:hidden;
 }
 .desire-strip::before{
@@ -377,8 +359,8 @@ section{ padding:84px 0; position:relative; }
     radial-gradient(70% 60% at 0% 110%, hsla(207,64%,11%,.45), transparent 60%),
     var(--grid-white),
     linear-gradient(158deg, hsl(197,80%,46%) -10%, var(--cota) 40%, var(--cota-dark) 105%);
-  color:#fff; border:2px solid var(--navy-deep);
-  box-shadow:10px 10px 0 var(--navy-deep);
+  color:#fff; border:1px solid hsla(0,0%,100%,.18);
+  box-shadow:var(--shadow-large);
 }
 .compare-col.good::after{
   content:""; position:absolute; inset:10px; z-index:-1; border-radius:calc(var(--radius-lg) - 8px);
@@ -425,7 +407,8 @@ section{ padding:84px 0; position:relative; }
 .flip-embed{ background:linear-gradient(135deg,var(--navy),var(--navy-deep));
   padding:6px; border-radius:var(--radius-lg); box-shadow:var(--shadow-large);
   position:relative; isolation:isolate; }
-.flip-embed .fp-iframe{ display:block; width:100%; height:860px; border:none;
+/* flipbook em paisagem (6 paginas 1,41:1): altura proporcional, sem vazio em volta */
+.flip-embed .fp-iframe{ display:block; width:100%; height:640px; border:none;
   border-radius:var(--radius-md); background:#fffdf8; }
 .flip-embed .fp-iframe.ph{ height:560px; font-size:.95rem; padding:40px; }
 .flip-hint{ text-align:center; margin-top:16px; font-family:var(--font-serif);
@@ -438,14 +421,15 @@ section{ padding:84px 0; position:relative; }
   -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
           mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent); }
 .pm-track{ display:flex; gap:22px; width:max-content; will-change:transform; padding:14px 0; }
-.pm-left { animation:pm-scroll-left  44s linear infinite; }
-.pm-right{ animation:pm-scroll-right 44s linear infinite; }
+.pm-left { animation:pm-scroll-left  90s linear infinite; }
+.pm-right{ animation:pm-scroll-right 90s linear infinite; }
+.pm-slow { animation-duration:110s; }
 .page-marquee{ display:flex; flex-direction:column; gap:10px; margin-bottom:44px; }
 .page-marquee:hover .pm-track{ animation-play-state:paused; }
-.pm-img{ display:block; height:460px; width:auto; flex:none;
+/* prancha 16:9 em tamanho grande: o leitor precisa LER a planta passando */
+.pm-img{ display:block; height:520px; width:auto; flex:none;
   border-radius:var(--radius-md); border:1px solid var(--border);
-  box-shadow:0 6px 18px hsla(205,30%,20%,.12); object-fit:contain; background:#fffdf8; }
-.pm-img.ph{ aspect-ratio:1/1.414; font-size:.8rem; padding:22px; }
+  box-shadow:0 6px 18px hsla(205,30%,20%,.12); object-fit:contain; background:#fff; }
 @keyframes pm-scroll-left { from{transform:translateX(0)}    to{transform:translateX(-50%)} }
 @keyframes pm-scroll-right{ from{transform:translateX(-50%)} to{transform:translateX(0)} }
 
@@ -467,18 +451,18 @@ section{ padding:84px 0; position:relative; }
 .cm-track .cm-pill:nth-child(5n+2){ border-color:var(--cota); color:var(--cota-dark); }
 .cm-track .cm-pill:nth-child(5n+3){ background:var(--linen); border-color:var(--linen-deep); color:hsl(30,20%,28%); }
 .cm-pill.more{ background:var(--alert);
-  color:var(--navy-deep); border:2px solid var(--navy-deep); font-weight:800;
-  box-shadow:4px 4px 0 var(--navy-deep); }
-@media (prefers-reduced-motion:reduce){ .pm-track,.cm-track,.life-track{animation:none} .pm-row,.cm-row,.life-row{overflow-x:auto} }
+  color:var(--navy-deep); border:1px solid var(--border); font-weight:800;
+  box-shadow:var(--shadow-subtle); }
+@media (prefers-reduced-motion:reduce){ .pm-track,.cm-track{animation:none} .pm-row,.cm-row{overflow-x:auto} }
 
 .mid-cta{ margin-top:48px; text-align:center; position:relative; isolation:isolate;
   background:
     radial-gradient(130% 110% at 50% -25%, hsla(199,85%,45%,.45), transparent 62%),
     var(--grid-white),
     linear-gradient(160deg, var(--navy), var(--navy-deep));
-  border:2px solid var(--navy-deep);
+  border:1px solid hsla(0,0%,100%,.14);
   border-radius:var(--radius-lg); padding:38px 32px 32px;
-  box-shadow:10px 10px 0 var(--code); }
+  box-shadow:var(--shadow-large); }
 .mc-chip{ display:inline-flex; align-items:center; gap:.5em;
   font-family:var(--font-num); font-weight:700; font-size:.71rem;
   letter-spacing:.12em; text-transform:uppercase;
@@ -512,7 +496,7 @@ section{ padding:84px 0; position:relative; }
 .persona-card .ic{ width:64px; height:64px; margin:0 auto 18px; border-radius:50%;
   display:grid; place-items:center; font-size:1.8rem; color:#fff;
   background:linear-gradient(135deg,var(--primary-light),var(--navy-deep));
-  border:2px solid var(--navy-deep); }
+  border:none; }
 .persona-card:nth-child(2) .ic{ background:linear-gradient(135deg,var(--code),var(--code-dark)); }
 .persona-card:nth-child(3) .ic{ background:linear-gradient(135deg,var(--cota),var(--cota-dark)); }
 .persona-card h3{ font-family:var(--font-display); font-weight:700; font-size:1.2rem;
@@ -532,11 +516,11 @@ section{ padding:84px 0; position:relative; }
     linear-gradient(165deg, hsl(198,80%,44%), var(--cota-dark));
   color:#fff; position:relative; isolation:isolate; }
 .grid-bonus{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; padding-top:56px; }
-.bonus-card{ background:#fff; border:2px solid var(--navy-deep);
+.bonus-card{ background:#fff; border:1px solid var(--border);
   border-radius:var(--radius-lg); padding:52px 26px 28px;
-  display:flex; flex-direction:column; box-shadow:8px 8px 0 var(--navy-deep);
+  display:flex; flex-direction:column; box-shadow:var(--shadow-medium);
   transition:var(--transition); position:relative; isolation:isolate; }
-.bonus-card:hover{ transform:translate(-3px,-5px); box-shadow:12px 13px 0 var(--navy-deep); }
+.bonus-card:hover{ transform:translateY(-6px); box-shadow:var(--shadow-large); }
 .bonus-card .cover{ aspect-ratio:16/10; margin:-38px 0 14px;
   background:transparent; border:none; box-shadow:none; overflow:visible;
   display:grid; place-items:center; }
@@ -563,7 +547,7 @@ section{ padding:84px 0; position:relative; }
 
 .bonus-final{ margin-top:54px; max-width:640px; margin-inline:auto; text-align:center;
   position:relative; isolation:isolate; border-radius:var(--radius-lg); padding:40px 34px 38px;
-  background:var(--alert-soft); border:2px solid var(--navy-deep); box-shadow:10px 10px 0 var(--navy-deep);
+  background:var(--alert-soft); border:1px solid var(--border); box-shadow:var(--shadow-large);
   overflow:hidden; }
 .bonus-final::after{ content:""; position:absolute; top:0; bottom:0; left:-60%;
   width:45%; z-index:-1;
@@ -638,7 +622,7 @@ section{ padding:84px 0; position:relative; }
   position:relative; background:#fff; padding-top:46px; text-align:center; }
 .plan.vip .ribbon{ position:absolute; top:0; left:50%; transform:translate(-50%,-50%);
   display:inline-flex; align-items:center; gap:.4em; white-space:nowrap;
-  background:var(--code-dark); color:#fff; border:2px solid var(--navy-deep);
+  background:var(--code-dark); color:#fff; border:none;
   font-family:var(--font-num); font-weight:800; font-size:.74rem; letter-spacing:.08em;
   text-transform:uppercase; padding:9px 22px; border-radius:var(--radius-pill);
   box-shadow:var(--shadow-medium); }
@@ -665,8 +649,14 @@ section{ padding:84px 0; position:relative; }
 .plan li.no{ color:var(--text-muted); }
 .plan li.no .ic{ background:#fff; border:2px solid var(--border); color:hsl(205,8%,55%); }
 .plan.vip h3{ color:var(--navy); }
-.offer-secure{ margin-top:16px; text-align:center; font-size:.85rem; color:var(--text-muted);
-  display:flex; justify-content:center; gap:8px; flex-wrap:wrap; }
+.offer-secure{
+  position:relative; left:50%; transform:translateX(-50%);
+  width:min(calc(100% + 40px), 500px); margin:18px 0 0;
+}
+.offer-secure img{
+  display:block; width:100%; height:auto;
+  filter:saturate(1.08) contrast(1.08);
+}
 .offer::before{ content:""; position:absolute; inset:0; z-index:-1; pointer-events:none;
   background-image:var(--grain); background-size:220px 220px; opacity:.4; mix-blend-mode:soft-light; }
 .plan.basic::before{ content:""; position:absolute; inset:0; z-index:-1; pointer-events:none;
@@ -680,7 +670,7 @@ section{ padding:84px 0; position:relative; }
 .guarantee{ background:var(--grid), var(--paper); position:relative; isolation:isolate; }
 .guarantee-box{ max-width:720px; margin:0 auto; text-align:center;
   background:linear-gradient(160deg,var(--alert-soft),#fff 70%);
-  border:2px solid var(--navy-deep); box-shadow:10px 10px 0 var(--cota);
+  border:1px solid var(--border); box-shadow:var(--shadow-large);
   border-radius:var(--radius-lg); padding:44px 40px;
   position:relative; isolation:isolate; }
 .seal-days-img{ width:250px; height:250px; max-width:80%; margin:0 auto 24px;
@@ -696,7 +686,7 @@ section{ padding:84px 0; position:relative; }
 .faq-list{ max-width:720px; margin:0 auto; display:flex; flex-direction:column; gap:14px; }
 .faq-item{ background:#fff; border:1px solid var(--linen-deep);
   border-radius:var(--radius-md); overflow:hidden; transition:var(--transition); }
-.faq-item[open]{ border:2px solid var(--navy-deep); box-shadow:6px 6px 0 var(--code); }
+.faq-item[open]{ border:1px solid var(--border); box-shadow:var(--shadow-medium); }
 .faq-item summary{ list-style:none; cursor:pointer; padding:22px 26px;
   font-family:var(--font-num); font-weight:700; color:var(--text-dark);
   display:flex; justify-content:space-between; align-items:center; gap:16px; }
@@ -726,8 +716,8 @@ section{ padding:84px 0; position:relative; }
   color:var(--alert); border-radius:var(--radius-pill);
   padding:10px 22px; font-weight:700; margin-bottom:30px; }
 .final .btn-gold{ background:var(--navy-deep); color:#fff;
-  box-shadow:6px 6px 0 var(--code-dark); }
-.final .btn-gold:hover{ box-shadow:9px 9px 0 var(--code-dark); }
+  box-shadow:0 14px 34px hsla(207,64%,11%,.4); }
+.final .btn-gold:hover{ box-shadow:0 20px 44px hsla(207,64%,11%,.5); }
 .final::before{ content:""; position:absolute; inset:0; z-index:-1; pointer-events:none;
   background-image:var(--grain); background-size:220px 220px; opacity:.08; mix-blend-mode:multiply; }
 
@@ -750,7 +740,7 @@ footer::before{ content:""; position:absolute; inset:0; z-index:-1; pointer-even
 .downsell-overlay.open{ display:flex; }
 .downsell-modal{ background:var(--bg-marfim); border-radius:var(--radius-lg);
   max-width:460px; width:100%; padding:38px 32px; text-align:center;
-  box-shadow:10px 10px 0 var(--code); position:relative; border:2px solid var(--navy-deep);
+  box-shadow:var(--shadow-large); position:relative; border:1px solid var(--border);
   animation:pop .35s cubic-bezier(.2,.8,.3,1.2); isolation:isolate; margin:auto; }
 @keyframes pop{ from{transform:scale(.9); opacity:0} to{transform:scale(1); opacity:1} }
 .downsell-modal::before{ content:""; position:absolute; inset:0; z-index:-1; pointer-events:none;
@@ -786,8 +776,8 @@ footer::before{ content:""; position:absolute; inset:0; z-index:-1; pointer-even
 /* ===== breakpoints ===== */
 @media (max-width:900px){
   .offer-grid{ grid-template-columns:1fr; }
-  .flip-embed .fp-iframe{ height:700px; }
-  .pm-img{ height:380px; }
+  .flip-embed .fp-iframe{ height:520px; }
+  .pm-img{ height:400px; }
   .hero-mockup{ max-width:640px; }
   .grid-bonus{ grid-template-columns:1fr; row-gap:68px; max-width:420px; margin-inline:auto; }
 }
@@ -795,19 +785,17 @@ footer::before{ content:""; position:absolute; inset:0; z-index:-1; pointer-even
   .grid-desire{ grid-template-columns:1fr; }
   .desire-card--wide{ grid-column:span 1; flex-direction:column; }
   .desire-card--wide .card-img{ width:calc(100% + 52px); flex:none; margin:-30px -26px 22px; min-height:0;
-    height:auto; aspect-ratio:4/3;
-    -webkit-mask-image:linear-gradient(180deg,#000 84%,transparent);
-            mask-image:linear-gradient(180deg,#000 84%,transparent); border-right:none; border-bottom:1px solid var(--border); }
+    height:auto; aspect-ratio:4/3; object-fit:cover; background:#fff;
+    border-right:none; border-bottom:1px solid var(--border); }
   .desire-card--wide .card-img.ph{ border-width:0 0 2px; padding:20px 20px 30px; }
   .compare-grid{ grid-template-columns:1fr; }
   .grid-persona{ grid-template-columns:1fr; }
   .grid-testi{ grid-template-columns:1fr; }
 }
 @media (max-width:560px){
-  .flip-embed .fp-iframe{ height:560px; }
+  .flip-embed .fp-iframe{ height:400px; }
   .flip-embed .fp-iframe.ph{ height:480px; padding:24px; font-size:.84rem; }
-  .pm-img{ height:300px; }
-  .pm-img.ph{ font-size:.68rem; padding:14px; }
+  .pm-img{ height:290px; }
   .btn-lg{ width:100%; padding:19px 24px; }
   .hero-mockup.ph{ aspect-ratio:4/5; font-size:.8rem; }
   .desire-strip{ padding:34px 24px; }
@@ -1024,7 +1012,6 @@ section{ padding:104px 0; }
   border-bottom:1px solid rgba(136,64,32,.35);
 }
 .desire-card .quote{ border-left:1px solid var(--cota); }
-.life-img{ border-radius:9px; box-shadow:0 12px 28px rgba(20,42,51,.1); }
 
 .desire-strip{
   background:
@@ -1242,9 +1229,11 @@ section{ padding:104px 0; }
   --leaf-dark:      #3d7a12;
   --leaf-soft:      #f0ffe5;
   --mint:           #87f0a7;
-  --purple:         #7c3aed;
-  --purple-dark:    #4c1d95;
-  --purple-soft:    #f3efff;
+  /* AZUL FORTE (nome legado "purple"). A página não usa roxo em lugar nenhum:
+     o contraste vem do azul profundo contra o azul-cota claro. */
+  --purple:         #1d4ed8;
+  --purple-dark:    #172f8f;
+  --purple-soft:    #eaf0ff;
 
   --alert:          #ffc928;
   --alert-deep:     #e3a500;
@@ -1317,7 +1306,7 @@ section{ padding:92px 0; }
   height:4px;
   margin:20px auto 0;
   border-radius:99px;
-  background:linear-gradient(90deg,var(--coral),var(--cota),var(--purple));
+  background:linear-gradient(90deg,var(--cota),var(--purple-dark));
   box-shadow:0 5px 16px rgba(14,165,233,.2);
 }
 .section-head p{ max-width:62ch; margin-inline:auto; line-height:1.7; }
@@ -1330,7 +1319,7 @@ section{ padding:92px 0; }
 .dark-head p{ color:rgba(244,248,255,.84); }
 
 /* Verde de conversão validado, com presença forte e pulsação controlada. */
-.btn{ border-radius:var(--radius-pill); padding:18px 34px; }
+.btn{ border-radius:12px; padding:18px 34px; }
 .btn-buy{
   color:#fff;
   background:linear-gradient(135deg,#12c74e,var(--buy-dark));
@@ -1341,7 +1330,7 @@ section{ padding:92px 0; }
   background:linear-gradient(135deg,#10bd49,#048f39);
   box-shadow:0 18px 42px rgba(3,138,50,.42);
 }
-.btn-ghost{ border-radius:var(--radius-pill); }
+.btn-ghost{ border-radius:12px; }
 
 .topbar{
   color:#fff;
@@ -1358,7 +1347,7 @@ section{ padding:92px 0; }
 .hero{
   background:
     radial-gradient(900px 520px at 50% -8%,rgba(14,165,233,.42),transparent 64%),
-    radial-gradient(620px 420px at 92% 88%,rgba(124,58,237,.28),transparent 62%),
+    radial-gradient(620px 420px at 92% 88%,rgba(29,78,216,.28),transparent 62%),
     radial-gradient(480px 360px at 0% 88%,rgba(255,90,61,.18),transparent 64%),
     var(--grid-white),
     linear-gradient(180deg,#162f74,#091b4b);
@@ -1413,7 +1402,7 @@ section{ padding:92px 0; }
 }
 .compare{
   background:
-    radial-gradient(600px 320px at 92% 0%,rgba(124,58,237,.13),transparent 68%),
+    radial-gradient(600px 320px at 92% 0%,rgba(29,78,216,.13),transparent 68%),
     linear-gradient(180deg,#f4f7ff,#edf2ff);
 }
 .inside{
@@ -1425,8 +1414,8 @@ section{ padding:92px 0; }
 .personas{
   background:
     radial-gradient(560px 330px at 0% 100%,rgba(255,90,61,.13),transparent 68%),
-    radial-gradient(560px 330px at 100% 0%,rgba(124,58,237,.13),transparent 68%),
-    linear-gradient(180deg,#faf8ff,#f2f6ff);
+    radial-gradient(560px 330px at 100% 0%,rgba(29,78,216,.13),transparent 68%),
+    linear-gradient(180deg,#f7fafd,#eef4fa);
 }
 .testi{
   background:
@@ -1441,7 +1430,7 @@ section{ padding:92px 0; }
 }
 .faq{
   background:
-    radial-gradient(540px 320px at 0% 0%,rgba(124,58,237,.1),transparent 68%),
+    radial-gradient(540px 320px at 0% 0%,rgba(29,78,216,.1),transparent 68%),
     linear-gradient(180deg,#f9f8ff,#f2f5ff);
 }
 
@@ -1454,12 +1443,12 @@ section{ padding:92px 0; }
   border:1px solid var(--border);
   box-shadow:var(--shadow-subtle);
 }
-.grid-desire .desire-card:nth-child(3n+1){ border-top:4px solid var(--coral); }
-.grid-desire .desire-card:nth-child(3n+2){ border-top:4px solid var(--cota); }
-.grid-desire .desire-card:nth-child(3n){ border-top:4px solid var(--purple); }
+
+
+
 .desire-card--wide{
-  background:linear-gradient(135deg,#eef9ff,#f7f2ff 58%,#fff2ee);
-  border-top-color:var(--buy) !important;
+  background:linear-gradient(135deg,#eef9ff,#e8f1fd 58%,#f4f8fc);
+
 }
 .desire-card .verse{
   color:var(--coral-dark);
@@ -1471,7 +1460,7 @@ section{ padding:92px 0; }
   color:#fff;
   background:
     radial-gradient(520px 260px at 100% 0%,rgba(103,212,255,.36),transparent 68%),
-    linear-gradient(145deg,#2357c6,#5b21b6);
+    linear-gradient(145deg,#2357c6,#1b3fa8);
   border:1px solid rgba(23,47,115,.45);
   box-shadow:var(--shadow-large);
 }
@@ -1493,7 +1482,7 @@ section{ padding:92px 0; }
 .good li .ic{ background:var(--buy-dark); border-color:var(--buy-dark); }
 .good li b{ color:var(--mint); text-decoration-color:rgba(135,240,167,.55); }
 
-.flip-embed{ background:linear-gradient(135deg,#2563eb,#5b21b6); }
+.flip-embed{ background:linear-gradient(135deg,#2563eb,#1b3fa8); }
 .cm-pill.more{
   color:#fff;
   background:linear-gradient(135deg,var(--coral),var(--coral-dark));
@@ -1510,28 +1499,26 @@ section{ padding:92px 0; }
 .mid-cta .btn:hover{ background:#0fbf4b; box-shadow:0 14px 34px rgba(3,138,50,.38); }
 .mc-facts b{ color:var(--mint); }
 
-.persona-card{ text-align:center; border-top:4px solid var(--cota); }
-.persona-card:nth-child(2){ border-top-color:var(--coral); }
-.persona-card:nth-child(3){ border-top-color:var(--purple); }
+.persona-card{ text-align:center; }
+
+
 .persona-card .ic{ margin:0 auto 18px; border-radius:50%; }
 .persona-card:nth-child(1) .ic{ background:linear-gradient(135deg,#0ea5e9,#2357c6); }
 .persona-card:nth-child(2) .ic{ background:linear-gradient(135deg,#ff795f,#c9321a); }
-.persona-card:nth-child(3) .ic{ background:linear-gradient(135deg,#9b6cff,#4c1d95); }
+.persona-card:nth-child(3) .ic{ background:linear-gradient(135deg,#5b9cff,#172f8f); }
 
 .bonus{
   background:
     radial-gradient(720px 500px at 4% 0%,rgba(14,165,233,.3),transparent 66%),
     radial-gradient(640px 440px at 100% 100%,rgba(255,90,61,.22),transparent 68%),
-    var(--grid-white),linear-gradient(145deg,#172f73,#4c1d95 72%,#261052);
+    var(--grid-white),linear-gradient(145deg,#172f73,#172f8f 72%,#0f1f52);
 }
 .bonus-card{
   background:#fff;
-  border:1px solid rgba(124,58,237,.28);
+  border:1px solid rgba(29,78,216,.28);
   box-shadow:var(--shadow-medium);
 }
-.bonus-card:nth-child(1){ border-top:5px solid var(--cota); }
-.bonus-card:nth-child(2){ border-top:5px solid var(--coral); }
-.bonus-card:nth-child(3){ border-top:5px solid var(--leaf); }
+
 .bonus-price .free{
   color:#fff;
   background:linear-gradient(135deg,#12c74e,var(--buy-dark));
@@ -1541,7 +1528,7 @@ section{ padding:92px 0; }
 }
 .bonus-final{
   background:#fff;
-  border:2px solid var(--coral);
+  border:1px solid var(--border);
   box-shadow:var(--shadow-large);
 }
 .bonus-final-badge{
@@ -1550,9 +1537,9 @@ section{ padding:92px 0; }
   animation:badge-bob 2.6s ease-in-out infinite;
 }
 
-.testi-card{ align-items:center; text-align:center; border-top:4px solid var(--buy); }
-.testi-card:nth-child(2){ border-top-color:var(--cota); }
-.testi-card:nth-child(3){ border-top-color:var(--purple); }
+.testi-card{ align-items:center; text-align:center; }
+
+
 .testi-head{ align-items:center; }
 .testi-head .avatar{ border-color:#fff; }
 
@@ -1573,8 +1560,8 @@ section{ padding:92px 0; }
 .plan li.yes .ic{ background:var(--buy-dark); border-color:var(--buy-dark); }
 
 .guarantee-box{
-  background:linear-gradient(145deg,#fff,#effff4 48%,#eaf8ff);
-  border:2px solid var(--leaf);
+  background:linear-gradient(145deg,#fff,#f4fbff 48%,#eaf4fd);
+  border:1px solid var(--border);
   box-shadow:var(--shadow-medium);
 }
 .guarantee-box h2{ color:var(--primary); }
@@ -1588,7 +1575,7 @@ section{ padding:92px 0; }
   background:
     radial-gradient(760px 400px at 50% -10%,rgba(14,165,233,.34),transparent 64%),
     radial-gradient(480px 320px at 100% 100%,rgba(255,90,61,.22),transparent 66%),
-    var(--grid-white),linear-gradient(145deg,#4c1d95,#172f73 62%,#091b4b);
+    var(--grid-white),linear-gradient(145deg,#172f8f,#172f73 62%,#091b4b);
   border-top:3px solid var(--coral);
 }
 .final .eyebrow{ color:var(--gold-light); }
@@ -1597,14 +1584,14 @@ section{ padding:92px 0; }
 .final p.urg{ color:var(--gold-light); background:rgba(255,255,255,.1); border:1px solid rgba(255,223,102,.38); }
 .final .btn-gold,
 .final .btn-gold:hover{
-  color:#171228;
+  color:#101a2e;
   background:linear-gradient(135deg,#ffe58a,#f5b900);
   box-shadow:var(--shadow-gold);
 }
 
 .downsell-modal{
   background:#fff;
-  border:2px solid var(--coral);
+  border:1px solid var(--border);
   box-shadow:var(--shadow-large);
 }
 
@@ -1640,6 +1627,22 @@ section{ padding:92px 0; }
   .bonus-price{ align-items:flex-start; }
   .bonus-price .free{ white-space:normal; text-align:center; }
 }
+
+/* ===== FLIPBOOK — moldura grande e visível no celular =====
+   Páginas verticais (2:3): no celular a moldura vira quase a tela inteira,
+   para a página ocupar toda a largura e o texto ficar legível. */
+@media (min-width:901px){
+  .flip-embed .fp-iframe{ height:760px; }
+}
+@media (max-width:900px){
+  .flip-embed .fp-iframe{ height:700px; }
+}
+@media (max-width:560px){
+  .inside .flip-wrap{ margin-inline:-22px; margin-bottom:40px; }      /* sangra até a borda da tela */
+  .inside .flip-embed{ padding:3px; border-radius:14px; }
+  .inside .flip-embed .fp-iframe{ height:min(150vw, 680px); border-radius:11px; } /* proporção vertical */
+  .inside .flip-hint{ padding-inline:22px; }
+}
 </style>
 </head>
 <body>
@@ -1669,11 +1672,9 @@ section{ padding:92px 0; }
 
       <div class="book-stage reveal in delay-1">
         <div class="book-glow"></div>
-        <!-- trocar por <img class="hero-mockup" src="assets/mockups/mockup-principal.webp" alt="..." fetchpriority="high" /> -->
-        <div class="hero-mockup ph" data-arquivo="assets/mockups/mockup-principal.webp" role="img"
-             aria-label="Mockup da biblioteca 100 Projetos de Casas e Sobrados">
-          <span><b>MOCKUP PRINCIPAL (PNG/WebP, fundo transparente):</b> notebook com a área de membros aberta na grade de projetos — cards com miniatura de fachada e etiquetas "Lote 5x20 · 2 quartos · 1 vaga", e filtros no topo (Tamanho do lote · Casa/Sobrado · Nº de quartos · Venda/Aluguel). Ao lado, tablet com uma ficha aberta (planta baixa vista de cima + fachada + quadro de dados) e celular com o render de um sobrado compacto. Capa "100 Projetos de Casas e Sobrados" visível em um dos dispositivos.</span>
-        </div>
+        <img class="hero-mockup" src="assets/mockups/mockup-plano-completo-recortado.png"
+             alt="Biblioteca digital 100 Projetos de Casas e Sobrados em notebook e celular, com quatro plantas ao fundo"
+             fetchpriority="high" decoding="async" />
       </div>
 
       <div class="hero-trust reveal in delay-2">
@@ -1719,104 +1720,59 @@ section{ padding:92px 0; }
     </div>
 
     <div class="grid-desire">
-      <div class="desire-card reveal">
-        <div class="card-img ph" data-arquivo="assets/projetos/vitrine-casa-terrea.webp" role="img" aria-label="Casa térrea compacta">
-          <span><b>Casa térrea compacta:</b> render da fachada frontal + mini planta baixa sobreposta no canto inferior, etiqueta "Lote 6x20".</span>
-        </div>
-        <span class="verse">Casas Térreas Compactas</span>
+      <div class="desire-card reveal" data-project-id="p03-terrea-5x20-1q">
+        <img class="card-img" src="assets/projetos/p03-terrea-5x20-1q-fachada.png" loading="lazy" alt="Fachada da Casa Térrea Compacta 1 Quarto — projeto p03, lote 5x20" />
+        <span class="verse">Projeto 003 · Térrea compacta</span>
         <h3>A casa enxuta que cabe em lote pequeno</h3>
         <p>Plantas de 1, 2 e 3 quartos, com ou sem suíte, para quem quer construir sem escada.</p>
         <span class="quote">Exemplo: lote 6x20 · 2 quartos · 1 vaga</span>
       </div>
-      <div class="desire-card reveal delay-1">
-        <div class="card-img ph" data-arquivo="assets/projetos/vitrine-sobrado.webp" role="img" aria-label="Sobrado compacto">
-          <span><b>Sobrado compacto:</b> perspectiva externa com garagem na frente + plantas do térreo e do pavimento superior lado a lado, etiqueta "Lote 5x20".</span>
-        </div>
-        <span class="verse">Sobrados Compactos</span>
+      <div class="desire-card reveal delay-1" data-project-id="p13-sobrado-5x20-3q">
+        <img class="card-img" src="assets/projetos/p13-sobrado-5x20-3q-fachada.png" loading="lazy" alt="Fachada do Sobrado 3 Quartos com Garagem — projeto p13, lote 5x20" />
+        <span class="verse">Projeto 013 · Sobrado compacto</span>
         <h3>Mais área construída no mesmo pedaço de chão</h3>
         <p>Social no térreo, quartos em cima e garagem na frente: o lote cresce para cima.</p>
         <span class="quote">Exemplo: lote 5x20 · 3 quartos · 2 banheiros</span>
       </div>
-      <div class="desire-card reveal delay-2">
-        <div class="card-img ph" data-arquivo="assets/projetos/vitrine-duas-unidades.webp" role="img" aria-label="Duas unidades no mesmo lote">
-          <span><b>Duas unidades no lote:</b> vista de cima do terreno com duas casas geminadas espelhadas, cotas do lote e etiqueta "2 unidades".</span>
-        </div>
-        <span class="verse">Duas Unidades no Lote</span>
+      <div class="desire-card reveal delay-2" data-project-id="p11-terrea-12x20-geminadas">
+        <img class="card-img" src="assets/projetos/p11-terrea-12x20-geminadas-fachada.png" loading="lazy" alt="Fachada das Duas Casas Geminadas de 2 Quartos — projeto p11, lote 12x20" />
+        <span class="verse">Projeto 011 · Casas geminadas</span>
         <h3>Um terreno, dois imóveis para vender ou alugar</h3>
         <p>Geminadas, frente e fundos e casas pensadas para o fundo do terreno.</p>
         <span class="quote">Exemplo: lote 10x20 · 2 casas de 2 quartos</span>
       </div>
-      <div class="desire-card reveal">
-        <div class="card-img ph" data-arquivo="assets/projetos/vitrine-aluguel.webp" role="img" aria-label="Unidades para aluguel">
-          <span><b>Modelos para aluguel:</b> planta humanizada de 2 a 3 unidades de 1 quarto no mesmo lote, corredor lateral de acesso, etiqueta "Para aluguel".</span>
-        </div>
-        <span class="verse">Para Aluguel</span>
+      <div class="desire-card reveal" data-project-id="p12-terrea-7x25-aluguel">
+        <img class="card-img" src="assets/projetos/p12-terrea-7x25-aluguel-fachada.png" loading="lazy" alt="Fachada das Três Unidades de 1 Quarto para Aluguel — projeto p12, lote 7x25" />
+        <span class="verse">Projeto 012 · Unidades para aluguel</span>
         <h3>Plantas enxutas pensadas para locação</h3>
         <p>Unidades compactas e funcionais, com acesso independente e fáceis de mobiliar.</p>
         <span class="quote">Exemplo: lote 7x25 · 3 unidades de 1 quarto</span>
       </div>
-      <div class="desire-card reveal delay-1">
-        <div class="card-img ph" data-arquivo="assets/projetos/vitrine-comercio.webp" role="img" aria-label="Casa com comércio">
-          <span><b>Casa com comércio:</b> fachada de esquina com loja de porta de enrolar no térreo e moradia no pavimento de cima, etiqueta "Esquina".</span>
-        </div>
-        <span class="verse">Casa com Comércio</span>
+      <div class="desire-card reveal delay-1" data-project-id="p19-sobrado-6x25-comercio">
+        <img class="card-img" src="assets/projetos/p19-sobrado-6x25-comercio-fachada.png" loading="lazy" alt="Fachada do Sobrado com Ponto Comercial no Térreo — projeto p19, lote 6x25" />
+        <span class="verse">Projeto 019 · Sobrado com comércio</span>
         <h3>Ponto comercial embaixo, moradia em cima</h3>
         <p>Projetos de uso misto para lote de esquina ou rua de movimento.</p>
         <span class="quote">Exemplo: lote de esquina · loja + 2 quartos</span>
       </div>
-      <div class="desire-card reveal delay-2">
-        <div class="card-img ph" data-arquivo="assets/projetos/vitrine-estreito.webp" role="img" aria-label="Projeto para terreno estreito">
-          <span><b>Terreno estreito:</b> planta comprida e estreita vista de cima, com cota de largura destacada (ex.: 4,5 m) e iluminação por área interna.</span>
-        </div>
-        <span class="verse">Terrenos Estreitos</span>
+      <div class="desire-card reveal delay-2" data-project-id="p15-sobrado-45x25-estreito">
+        <img class="card-img" src="assets/projetos/p15-sobrado-45x25-estreito-fachada.png" loading="lazy" alt="Fachada do Sobrado para Lote Muito Estreito — projeto p15, lote 4,5x25" />
+        <span class="verse">Projeto 015 · Sobrado estreito</span>
         <h3>Lote de 4 ou 5 metros de frente também tem saída</h3>
         <p>Distribuições lineares que aproveitam cada metro sem virar corredor escuro.</p>
         <span class="quote">Exemplo: lote 5x25 · 2 quartos · quintal</span>
       </div>
 
-      <div class="desire-card desire-card--wide reveal delay-3">
-        <div class="card-img ph" data-arquivo="assets/projetos/comparacao-5x20.webp" role="img" aria-label="Três projetos para o mesmo lote 5x20">
-          <span><b>Comparação lado a lado — o mesmo lote 5x20, 3 projetos:</b> (1) casa térrea 2 quartos, (2) sobrado 3 quartos com garagem, (3) duas unidades de 1 quarto. Cada coluna com planta vista de cima no mesmo contorno de lote + miniatura da fachada + etiquetas de área aproximada e nº de quartos.</span>
-        </div>
+      <div class="desire-card desire-card--wide reveal delay-3" data-project-id="p01-terrea-10x20-3q">
+        <img class="card-img" src="assets/projetos/p01-terrea-10x20-3q-fachada.png" loading="lazy" alt="Fachada da Casa Térrea 3 Quartos com Suíte — projeto p01, lote 10x20" />
         <div>
-          <span class="verse">Mesmo terreno, 3 possibilidades</span>
+          <span class="verse">Projeto 001 · Térrea 3 quartos</span>
           <h3>Um lote 5x20 pode virar casa, sobrado ou duas unidades</h3>
           <p>Na biblioteca você compara opções lado a lado antes de decidir. São <strong>100 projetos</strong> organizados por tamanho de lote, número de quartos e tipo de imóvel.</p>
         </div>
       </div>
     </div>
 
-    <!-- Carrossel de fachadas — antes da faixa numérica -->
-    <div class="life-marquee" aria-hidden="true">
-      <div class="life-row">
-        <div class="life-track life-left">
-          <div class="life-img ph" data-arquivo="assets/fachadas/fachada-01.webp"><span><b>Render:</b> casa térrea compacta, telhado embutido, muro baixo</span></div>
-          <div class="life-img ph" data-arquivo="assets/fachadas/fachada-02.webp"><span><b>Render:</b> sobrado 5x20 com garagem e varanda no 2º piso</span></div>
-          <div class="life-img ph" data-arquivo="assets/fachadas/fachada-03.webp"><span><b>Render:</b> duas casas geminadas espelhadas</span></div>
-          <div class="life-img ph" data-arquivo="assets/fachadas/fachada-04.webp"><span><b>Render:</b> casa com loja na esquina</span></div>
-          <div class="life-img ph" data-arquivo="assets/fachadas/fachada-05.webp"><span><b>Render:</b> sobrado estreito com fachada em ripado</span></div>
-          <div class="life-img ph" data-arquivo="assets/fachadas/fachada-01.webp"><span><b>Render:</b> casa térrea compacta, telhado embutido, muro baixo</span></div>
-          <div class="life-img ph" data-arquivo="assets/fachadas/fachada-02.webp"><span><b>Render:</b> sobrado 5x20 com garagem e varanda no 2º piso</span></div>
-          <div class="life-img ph" data-arquivo="assets/fachadas/fachada-03.webp"><span><b>Render:</b> duas casas geminadas espelhadas</span></div>
-          <div class="life-img ph" data-arquivo="assets/fachadas/fachada-04.webp"><span><b>Render:</b> casa com loja na esquina</span></div>
-          <div class="life-img ph" data-arquivo="assets/fachadas/fachada-05.webp"><span><b>Render:</b> sobrado estreito com fachada em ripado</span></div>
-        </div>
-      </div>
-      <div class="life-row">
-        <div class="life-track life-right">
-          <div class="life-img ph" data-arquivo="assets/fachadas/fachada-06.webp"><span><b>Render:</b> casa 3 quartos com varanda frontal</span></div>
-          <div class="life-img ph" data-arquivo="assets/fachadas/fachada-07.webp"><span><b>Render:</b> 3 unidades para aluguel com corredor lateral</span></div>
-          <div class="life-img ph" data-arquivo="assets/fachadas/fachada-08.webp"><span><b>Render:</b> sobrado com terraço e área gourmet</span></div>
-          <div class="life-img ph" data-arquivo="assets/fachadas/fachada-09.webp"><span><b>Render:</b> casa de fundos vista do quintal</span></div>
-          <div class="life-img ph" data-arquivo="assets/fachadas/fachada-10.webp"><span><b>Render:</b> sobrado de esquina com 2 frentes</span></div>
-          <div class="life-img ph" data-arquivo="assets/fachadas/fachada-06.webp"><span><b>Render:</b> casa 3 quartos com varanda frontal</span></div>
-          <div class="life-img ph" data-arquivo="assets/fachadas/fachada-07.webp"><span><b>Render:</b> 3 unidades para aluguel com corredor lateral</span></div>
-          <div class="life-img ph" data-arquivo="assets/fachadas/fachada-08.webp"><span><b>Render:</b> sobrado com terraço e área gourmet</span></div>
-          <div class="life-img ph" data-arquivo="assets/fachadas/fachada-09.webp"><span><b>Render:</b> casa de fundos vista do quintal</span></div>
-          <div class="life-img ph" data-arquivo="assets/fachadas/fachada-10.webp"><span><b>Render:</b> sobrado de esquina com 2 frentes</span></div>
-        </div>
-      </div>
-    </div>
 
     <div class="desire-strip reveal">
       <span class="ds-icon">✦ ✦ ✦</span>
@@ -1871,49 +1827,91 @@ section{ padding:92px 0; }
       <span class="eyebrow">Veja por dentro</span>
       <h2>Cada projeto vem <span class="hl">desenhado</span>, não só no nome</h2>
       <div class="rule"></div>
-      <p>Planta vista de cima, fachada, dimensões aproximadas do lote e da casa, quartos, banheiros e vaga — uma página por projeto, todas no mesmo padrão.</p>
+      <p>Planta humanizada vista de cima, com os ambientes mobiliados e a área de cada um, as medidas do lote, a implantação no terreno e o esquema de fundação — uma prancha por projeto, todas no mesmo padrão.</p>
     </div>
 
     <div class="flip-wrap">
       <div class="flip-embed">
-        <!-- PENDENTE: gerar pela skill (seção 5b) e trocar por
-             <iframe allowfullscreen allow="autoplay; fullscreen; clipboard-write" scrolling="no" class="fp-iframe" loading="lazy"
-                     title="Prévia real da biblioteca 100 Projetos de Casas e Sobrados" src="https://heyzine.com/flip-book/[ID].html"></iframe> -->
-        <div class="fp-iframe ph" data-arquivo="flipbook Heyzine (gerado pela API)" role="img" aria-label="Prévia folheável da biblioteca">
-          <span><b>FLIPBOOK HEYZINE — prévia folheável.</b> Só as páginas ANTES do Projeto 001: (1) capa · (2) apresentação "Como usar a biblioteca" · (3) <b>"Como ler cada projeto"</b> — uma ficha de exemplo com setas apontando: tipo de terreno, dimensão do lote, área aproximada, quartos, banheiros, vaga, planta vista de cima, fachada, observações práticas · (4) índice por tamanho de lote (5x20, 6x20, 7x20, estreitos, esquina, fundos) · (5) índice por tipo (térrea, sobrado, geminada, 2 unidades, aluguel, comércio) · (6) aviso "projetos de referência — valide com arquiteto/engenheiro".</span>
-        </div>
+        <iframe allowfullscreen allow="autoplay; fullscreen; clipboard-write" scrolling="no"
+                class="fp-iframe" loading="lazy"
+                title="Prévia real da biblioteca 100 Projetos de Casas e Sobrados"
+                src="https://heyzine.com/flip-book/d662d106d9.html"></iframe>
       </div>
       <p class="flip-hint">Folheie as páginas reais da biblioteca — arraste ou use as setas. ✦</p>
     </div>
 
     <!-- carrossel de FICHAS reais (retrato, 2 fileiras) — amostra, fora de ordem -->
-    <div class="page-marquee" aria-hidden="true">
+    <div class="page-marquee">
       <div class="pm-row">
         <div class="pm-track pm-left">
-          <div class="pm-img ph" data-arquivo="assets/projetos/ficha-a.webp"><span><b>Ficha — Casa térrea · lote 5x20 · 2 quartos · 1 banheiro.</b> Topo: nome do modelo + etiqueta do lote. Centro: planta humanizada vista de cima com cotas. Rodapé: fachada + quadro (área aprox., quartos, banheiros, vaga) + observação prática.</span></div>
-          <div class="pm-img ph" data-arquivo="assets/projetos/ficha-b.webp"><span><b>Ficha — Sobrado com garagem · lote 5x25 · 3 quartos (1 suíte).</b> Planta do térreo + planta do superior lado a lado, perspectiva externa e quadro de dados.</span></div>
-          <div class="pm-img ph" data-arquivo="assets/projetos/ficha-c.webp"><span><b>Ficha — 2 casas geminadas · lote 10x20 · 2 quartos cada.</b> Implantação das duas unidades espelhadas no lote + fachada conjunta + dados por unidade.</span></div>
-          <div class="pm-img ph" data-arquivo="assets/projetos/ficha-d.webp"><span><b>Ficha — Casa de fundos · lote 6x30 · 1 quarto.</b> Vista do lote inteiro mostrando casa da frente e dos fundos, corredor de acesso e dados da unidade.</span></div>
-          <div class="pm-img ph" data-arquivo="assets/projetos/ficha-e.webp"><span><b>Ficha — Sobrado estreito · lote 4,5x25 · 2 quartos.</b> Plantas dos 2 pavimentos com a cota de largura em destaque + corte simples mostrando a escada.</span></div>
-          <div class="pm-img ph" data-arquivo="assets/projetos/ficha-a.webp"><span><b>Ficha — Casa térrea · lote 5x20 · 2 quartos · 1 banheiro.</b> Topo: nome do modelo + etiqueta do lote. Centro: planta humanizada vista de cima com cotas. Rodapé: fachada + quadro (área aprox., quartos, banheiros, vaga) + observação prática.</span></div>
-          <div class="pm-img ph" data-arquivo="assets/projetos/ficha-b.webp"><span><b>Ficha — Sobrado com garagem · lote 5x25 · 3 quartos (1 suíte).</b> Planta do térreo + planta do superior lado a lado, perspectiva externa e quadro de dados.</span></div>
-          <div class="pm-img ph" data-arquivo="assets/projetos/ficha-c.webp"><span><b>Ficha — 2 casas geminadas · lote 10x20 · 2 quartos cada.</b> Implantação das duas unidades espelhadas no lote + fachada conjunta + dados por unidade.</span></div>
-          <div class="pm-img ph" data-arquivo="assets/projetos/ficha-d.webp"><span><b>Ficha — Casa de fundos · lote 6x30 · 1 quarto.</b> Vista do lote inteiro mostrando casa da frente e dos fundos, corredor de acesso e dados da unidade.</span></div>
-          <div class="pm-img ph" data-arquivo="assets/projetos/ficha-e.webp"><span><b>Ficha — Sobrado estreito · lote 4,5x25 · 2 quartos.</b> Plantas dos 2 pavimentos com a cota de largura em destaque + corte simples mostrando a escada.</span></div>
+          <img class="pm-img" src="assets/projetos/p02-terrea-6x25-2q-patio-planta.png" loading="lazy" alt="Casa Térrea 2 Quartos com Pátio Central — lote 6x25 m" />
+          <img class="pm-img" src="assets/projetos/p14-sobrado-6x20-2suites-planta.png" loading="lazy" alt="Sobrado 2 Suítes com Terraço — lote 6x20 m" />
+          <img class="pm-img" src="assets/projetos/p04-terrea-6x20-2q-planta.png" loading="lazy" alt="Casa Térrea 2 Quartos com Varanda — lote 6x20 m" />
+          <img class="pm-img" src="assets/projetos/p16-sobrado-7x20-4q-planta.png" loading="lazy" alt="Sobrado 4 Quartos com Suíte Master — lote 7x20 m" />
+          <img class="pm-img" src="assets/projetos/p05-terrea-7x20-3q-gourmet-planta.png" loading="lazy" alt="Casa Térrea 3 Quartos com Área Gourmet — lote 7x20 m" />
+          <img class="pm-img" src="assets/projetos/p17-sobrado-8x20-esquina-planta.png" loading="lazy" alt="Sobrado de Esquina com Duas Frentes — lote 8x20 m" />
+          <img class="pm-img" src="assets/projetos/p06-terrea-5x25-2q-estreita-planta.png" loading="lazy" alt="Casa Térrea 2 Quartos para Lote Estreito — lote 5x25 m" />
+          <img class="pm-img" src="assets/projetos/p18-sobrado-10x20-duplex-planta.png" loading="lazy" alt="Sobrado Duplex com Piscina — lote 10x20 m" />
+          <img class="pm-img" src="assets/projetos/p07-terrea-8x20-3q-suite-planta.png" loading="lazy" alt="Casa Térrea 3 Quartos com Suíte e Jardim Interno — lote 8x20 m" />
+          <img class="pm-img" src="assets/projetos/p20-sobrado-12x20-geminados-planta.png" loading="lazy" alt="Dois Sobrados Geminados de 2 Quartos — lote 12x20 m" />
+          <img class="pm-img" src="assets/projetos/p02-terrea-6x25-2q-patio-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p14-sobrado-6x20-2suites-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p04-terrea-6x20-2q-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p16-sobrado-7x20-4q-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p05-terrea-7x20-3q-gourmet-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p17-sobrado-8x20-esquina-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p06-terrea-5x25-2q-estreita-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p18-sobrado-10x20-duplex-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p07-terrea-8x20-3q-suite-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p20-sobrado-12x20-geminados-planta.png" loading="lazy" alt="" aria-hidden="true" />
         </div>
       </div>
       <div class="pm-row">
         <div class="pm-track pm-right">
-          <div class="pm-img ph" data-arquivo="assets/projetos/ficha-f.webp"><span><b>Ficha — Casa com comércio · esquina 8x20 · loja + 2 quartos.</b> Planta da loja no térreo, planta da moradia em cima, fachada nas duas frentes.</span></div>
-          <div class="pm-img ph" data-arquivo="assets/projetos/ficha-g.webp"><span><b>Ficha — 3 unidades para aluguel · lote 7x25 · 1 quarto cada.</b> Planta das três unidades em fila, acesso independente e dados por unidade.</span></div>
-          <div class="pm-img ph" data-arquivo="assets/projetos/ficha-h.webp"><span><b>Ficha — Casa com área gourmet e varanda · lote 7x20 · 3 quartos.</b> Planta humanizada + perspectiva do quintal com churrasqueira.</span></div>
-          <div class="pm-img ph" data-arquivo="assets/projetos/ficha-i.webp"><span><b>Ficha — Sobrado com terraço · lote 6x20 · 2 suítes.</b> Plantas dos 2 pisos + terraço, fachada e perspectiva externa.</span></div>
-          <div class="pm-img ph" data-arquivo="assets/projetos/ficha-j.webp"><span><b>Ficha — Casa 3 quartos com suíte e 2 vagas · lote 10x25.</b> Planta com garagem dupla coberta, fachada e quadro de dados.</span></div>
-          <div class="pm-img ph" data-arquivo="assets/projetos/ficha-f.webp"><span><b>Ficha — Casa com comércio · esquina 8x20 · loja + 2 quartos.</b> Planta da loja no térreo, planta da moradia em cima, fachada nas duas frentes.</span></div>
-          <div class="pm-img ph" data-arquivo="assets/projetos/ficha-g.webp"><span><b>Ficha — 3 unidades para aluguel · lote 7x25 · 1 quarto cada.</b> Planta das três unidades em fila, acesso independente e dados por unidade.</span></div>
-          <div class="pm-img ph" data-arquivo="assets/projetos/ficha-h.webp"><span><b>Ficha — Casa com área gourmet e varanda · lote 7x20 · 3 quartos.</b> Planta humanizada + perspectiva do quintal com churrasqueira.</span></div>
-          <div class="pm-img ph" data-arquivo="assets/projetos/ficha-i.webp"><span><b>Ficha — Sobrado com terraço · lote 6x20 · 2 suítes.</b> Plantas dos 2 pisos + terraço, fachada e perspectiva externa.</span></div>
-          <div class="pm-img ph" data-arquivo="assets/projetos/ficha-j.webp"><span><b>Ficha — Casa 3 quartos com suíte e 2 vagas · lote 10x25.</b> Planta com garagem dupla coberta, fachada e quadro de dados.</span></div>
+          <img class="pm-img" src="assets/projetos/p08-terrea-7x25-2q-fundos-planta.png" loading="lazy" alt="Casa Térrea 2 Quartos Voltada para o Fundo — lote 7x25 m" />
+          <img class="pm-img" src="assets/projetos/p21-sobrado-5x25-compacto-planta.png" loading="lazy" alt="Sobrado Compacto 2 Quartos para Aluguel — lote 5x25 m" />
+          <img class="pm-img" src="assets/projetos/p09-terrea-10x20-4q-planta.png" loading="lazy" alt="Casa Térrea 4 Quartos para Família Grande — lote 10x20 m" />
+          <img class="pm-img" src="assets/projetos/p22-sobrado-7x25-recuado-planta.png" loading="lazy" alt="Sobrado com Jardim Frontal Recuado — lote 7x25 m" />
+          <img class="pm-img" src="assets/projetos/p10-terrea-6x30-fundos-planta.png" loading="lazy" alt="Casa de Fundos 1 Quarto — lote 6x30 m" />
+          <img class="pm-img" src="assets/projetos/p26-sobrado-6x20-escritorio-planta.png" loading="lazy" alt="Sobrado com Escritório Integrado — lote 6x20 m" />
+          <img class="pm-img" src="assets/projetos/p23-terrea-8x20-comercio-planta.png" loading="lazy" alt="Casa Térrea com Ponto Comercial na Frente — lote 8x20 m" />
+          <img class="pm-img" src="assets/projetos/p29-sobrado-8x25-tres-unidades-planta.png" loading="lazy" alt="Sobrado com Três Unidades de Aluguel — lote 8x25 m" />
+          <img class="pm-img" src="assets/projetos/p24-terrea-10x25-frente-fundos-planta.png" loading="lazy" alt="Duas Casas Frente e Fundos no Mesmo Lote — lote 10x25 m" />
+          <img class="pm-img" src="assets/projetos/p25-terrea-9x20-acessivel-planta.png" loading="lazy" alt="Casa Térrea Acessível 3 Quartos — lote 9x20 m" />
+          <img class="pm-img" src="assets/projetos/p08-terrea-7x25-2q-fundos-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p21-sobrado-5x25-compacto-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p09-terrea-10x20-4q-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p22-sobrado-7x25-recuado-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p10-terrea-6x30-fundos-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p26-sobrado-6x20-escritorio-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p23-terrea-8x20-comercio-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p29-sobrado-8x25-tres-unidades-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p24-terrea-10x25-frente-fundos-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p25-terrea-9x20-acessivel-planta.png" loading="lazy" alt="" aria-hidden="true" />
+        </div>
+      </div>
+      <div class="pm-row">
+        <div class="pm-track pm-left pm-slow">
+          <img class="pm-img" src="assets/projetos/p27-terrea-6x20-kitnets-planta.png" loading="lazy" alt="Quatro Kitnets no Mesmo Lote — lote 6x20 m" />
+          <img class="pm-img" src="assets/projetos/p28-terrea-7x20-2q-jardim-planta.png" loading="lazy" alt="Casa Térrea 2 Quartos com Jardim Lateral — lote 7x20 m" />
+          <img class="pm-img" src="assets/projetos/p30-terrea-11x20-conjugada-planta.png" loading="lazy" alt="Casa Térrea com Edícula nos Fundos — lote 11x20 m" />
+          <img class="pm-img" src="assets/projetos/p01-terrea-10x20-3q-planta.png" loading="lazy" alt="Casa Térrea 3 Quartos com Suíte — lote 10x20 m" />
+          <img class="pm-img" src="assets/projetos/p03-terrea-5x20-1q-planta.png" loading="lazy" alt="Casa Térrea Compacta 1 Quarto — lote 5x20 m" />
+          <img class="pm-img" src="assets/projetos/p11-terrea-12x20-geminadas-planta.png" loading="lazy" alt="Duas Casas Geminadas de 2 Quartos — lote 12x20 m" />
+          <img class="pm-img" src="assets/projetos/p12-terrea-7x25-aluguel-planta.png" loading="lazy" alt="Três Unidades de 1 Quarto para Aluguel — lote 7x25 m" />
+          <img class="pm-img" src="assets/projetos/p13-sobrado-5x20-3q-planta.png" loading="lazy" alt="Sobrado 3 Quartos com Garagem — lote 5x20 m" />
+          <img class="pm-img" src="assets/projetos/p15-sobrado-45x25-estreito-planta.png" loading="lazy" alt="Sobrado para Lote Muito Estreito — lote 4.5x25 m" />
+          <img class="pm-img" src="assets/projetos/p19-sobrado-6x25-comercio-planta.png" loading="lazy" alt="Sobrado com Ponto Comercial no Térreo — lote 6x25 m" />
+          <img class="pm-img" src="assets/projetos/p27-terrea-6x20-kitnets-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p28-terrea-7x20-2q-jardim-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p30-terrea-11x20-conjugada-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p01-terrea-10x20-3q-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p03-terrea-5x20-1q-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p11-terrea-12x20-geminadas-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p12-terrea-7x25-aluguel-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p13-sobrado-5x20-3q-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p15-sobrado-45x25-estreito-planta.png" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/projetos/p19-sobrado-6x25-comercio-planta.png" loading="lazy" alt="" aria-hidden="true" />
         </div>
       </div>
     </div>
@@ -2036,9 +2034,8 @@ section{ padding:92px 0; }
     <div class="grid-bonus">
       <div class="bonus-card reveal">
         <div class="cover">
-          <div class="ph" data-arquivo="assets/mockups/bonus-calculadora.webp" role="img" aria-label="Calculadora de Estimativa de Gastos">
-            <span><b>Mockup PNG transparente:</b> notebook com a planilha aberta (metragem no topo + categorias: fundação, estrutura, alvenaria, cobertura, instalações, acabamento) + celular com o total estimado.</span>
-          </div>
+          <img src="assets/mockups/bonus-calculadora.png" loading="lazy" decoding="async"
+               alt="Calculadora de Estimativa de Gastos aberta em notebook e celular" />
         </div>
         <h3>Calculadora de Estimativa de Gastos para Construção</h3>
         <p>Informe a metragem e os principais custos para ter uma estimativa inicial da obra, organizada por categoria e ajustável aos preços da sua região.</p>
@@ -2049,9 +2046,8 @@ section{ padding:92px 0; }
       </div>
       <div class="bonus-card reveal delay-1">
         <div class="cover">
-          <div class="ph" data-arquivo="assets/mockups/bonus-cores.webp" role="img" aria-label="50 Combinações de Cores para Fachadas">
-            <span><b>Mockup PNG transparente:</b> tablet com grade de fachadas coloridas + 3 cartelas de cor soltas (parede, detalhe, esquadria) com a capa "50 Combinações de Cores".</span>
-          </div>
+          <img src="assets/mockups/bonus-cores.png" loading="lazy" decoding="async"
+               alt="50 Combinações de Cores para Fachadas em tablet com cartelas de cores" />
         </div>
         <h3>50 Combinações de Cores para Fachadas</h3>
         <p>50 referências visuais de cores para paredes, detalhes, esquadrias, muros e portões de casas e sobrados.</p>
@@ -2062,9 +2058,8 @@ section{ padding:92px 0; }
       </div>
       <div class="bonus-card reveal delay-2">
         <div class="cover">
-          <div class="ph" data-arquivo="assets/mockups/bonus-muros.webp" role="img" aria-label="Catálogo de Muros e Portões">
-            <span><b>Mockup PNG transparente:</b> catálogo impresso aberto + celular mostrando modelos de muro com portão de garagem e portão social (ripado, chapa, gradil).</span>
-          </div>
+          <img src="assets/mockups/bonus-muros.png" loading="lazy" decoding="async"
+               alt="Catálogo de Muros e Portões aberto com modelos de entradas residenciais e celular" />
         </div>
         <h3>Catálogo de Muros e Portões</h3>
         <p>Modelos de muros, portões e entradas residenciais para completar a fachada em diferentes estilos de casa e sobrado.</p>
@@ -2163,9 +2158,9 @@ section{ padding:92px 0; }
         <h3>Biblioteca Completa + 3 Bônus</h3>
         <p class="psub">Os 100 projetos e tudo para estimar o custo e fechar a fachada.</p>
 
-        <div class="plan-mockup ph" data-arquivo="assets/mockups/plano-completo.webp" role="img" aria-label="Pacote completo">
-          <span><b>Mockup do pacote completo:</b> o mockup principal (notebook + tablet + celular com os projetos) e, à frente, os 3 bônus (planilha da calculadora, cartela de cores, catálogo de muros e portões).</span>
-        </div>
+        <img class="plan-mockup" src="assets/mockups/mockup-plano-completo-recortado.png"
+             loading="lazy" decoding="async"
+             alt="Biblioteca completa com 100 projetos de casas e sobrados" />
 
         <div class="price-row">
           <span class="anchor">De <s>R$ 121</s> por apenas</span>
@@ -2188,9 +2183,9 @@ section{ padding:92px 0; }
         </a>
 
         <div class="offer-secure">
-          <span>🔒 Compra 100% segura</span> <span>•</span>
-          <span>🛡️ Garantia de 15 dias</span> <span>•</span>
-          <span>⚡ Acesso imediato</span>
+          <img src="assets/pagamentos/badge-pagamentos-cakto.png"
+               alt="Pagamento seguro com Visa, Mastercard, Elo e Pix, processado pela Cakto"
+               loading="lazy" decoding="async" />
         </div>
       </div>
 
@@ -2272,9 +2267,9 @@ section{ padding:92px 0; }
     <span class="dtag">Espere! Uma oferta só pra você</span>
     <h3>Leve a biblioteca completa por menos</h3>
     <p>Antes de seguir só com o básico… que tal levar <strong>os 100 projetos + os 3 bônus</strong> por um valor especial?</p>
-    <div class="dmockup ph" data-arquivo="assets/mockups/plano-completo.webp" role="img" aria-label="Pacote completo">
-      <span><b>Mesmo mockup do pacote completo</b> (projetos + 3 bônus).</span>
-    </div>
+    <img class="dmockup" src="assets/mockups/mockup-plano-completo-recortado.png"
+         loading="lazy" decoding="async"
+         alt="Biblioteca completa com 100 projetos de casas e sobrados" />
     <div class="dprice"><s>R$ 29,90</s> R$ 25,90</div>
     <a href="#" class="btn btn-buy btn-block" data-checkout="downsell">Quero o pacote completo</a>
     <a href="#" class="refuse" id="recusarDownsell" data-checkout="basico">Não, prefiro só os projetos por R$ 22,90</a>
@@ -2314,12 +2309,12 @@ section{ padding:92px 0; }
 })();
 
 /* 3. CHECKOUT + REPASSE DE UTM
-   PENDENTE: preencher os 3 links. Enquanto estiverem vazios, os botões ficam em "#". */
+   Links das 3 ofertas do produto na Cakto. */
 (function(){
   var LINKS = {
-    vip:      '',   // Oferta principal — R$ 29,90
-    downsell: '',   // Pacote completo com desconto — R$ 25,90
-    basico:   ''    // Só os projetos — R$ 22,90
+    vip:      'https://pay.cakto.com.br/3frc4mp',   // Oferta principal — R$ 29,90
+    downsell: 'https://pay.cakto.com.br/dztt8b8',   // Pacote completo com desconto — R$ 25,90
+    basico:   'https://pay.cakto.com.br/atdddmv'    // Só os projetos — R$ 22,90
   };
 
   var RASTREIO = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','sck',

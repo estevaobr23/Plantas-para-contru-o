@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1200, initial-scale=1" />
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      width: 1200px;
+      height: 280px;
+      margin: 0;
+      overflow: hidden;
+      background: transparent;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+    }
+
+    .badge {
+      width: 1200px;
+      height: 280px;
+      padding: 24px 24px;
+      display: grid;
+      grid-template-columns: 690px 2px 1fr;
+      align-items: center;
+      gap: 26px;
+      color: #26364d;
+      background: transparent;
+    }
+
+    .caption {
+      margin-bottom: 28px;
+      font-size: 34px;
+      line-height: 1;
+      font-weight: 750;
+      letter-spacing: 2.8px;
+      color: #5c6b80;
+    }
+
+    .payments .caption { text-align: center; }
+
+    .logos {
+      height: 104px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+    }
+
+    .logo {
+      display: block;
+      flex: 0 0 auto;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .visa { width: 164px; height: 58px; }
+    .mastercard { width: 116px; height: 84px; }
+    .elo { width: 120px; height: 84px; }
+    .pix { width: 174px; height: 80px; }
+
+    .divider {
+      width: 2px;
+      height: 188px;
+      border-radius: 2px;
+      background: #d6dfe8;
+    }
+
+    .processor {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .processor .caption {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 30px;
+      color: #1f7a4b;
+    }
+
+    .shield {
+      width: 46px;
+      height: 53px;
+      flex: 0 0 auto;
+    }
+
+    .processed-row {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      white-space: nowrap;
+    }
+
+    .processed-by {
+      font-size: 33px;
+      line-height: 1.05;
+      font-weight: 600;
+      color: #69778a;
+    }
+
+    .cakto { width: 185px; height: 64px; }
+  </style>
+</head>
+<body>
+  <main class="badge" aria-label="Formas de pagamento e processamento seguro pela Cakto">
+    <section class="payments">
+      <div class="caption">CARTÃO DE CRÉDITO OU PIX</div>
+      <div class="logos" aria-label="Visa, Mastercard, Elo e Pix">
+        <img class="logo visa" src="fontes/visa.svg" alt="Visa" />
+        <img class="logo mastercard" src="fontes/mastercard.svg" alt="Mastercard" />
+        <img class="logo elo" src="fontes/elo.svg" alt="Elo" />
+        <img class="logo pix" src="fontes/pix.svg" alt="Pix" />
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    <section class="processor">
+      <div class="caption">
+        <svg class="shield" viewBox="0 0 40 46" aria-hidden="true">
+          <path fill="#10a958" d="M20 0 38 7v12.4C38 31.6 30.3 41.8 20 46 9.7 41.8 2 31.6 2 19.4V7L20 0Z"/>
+          <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.2" d="m11.5 22.8 5.4 5.4 11.8-12"/>
+        </svg>
+        <span>PAGAMENTO SEGURO</span>
+      </div>
+      <div class="processed-row">
+        <span class="processed-by">Processado por</span>
+        <img class="logo cakto" src="fontes/cakto-logo-light.svg" alt="Cakto" />
+      </div>
+    </section>
+  </main>
+</body>
+</html>

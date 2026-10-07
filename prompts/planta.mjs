@@ -43,7 +43,13 @@ ESTILO VISUAL (obrigatório, idêntico em todos os projetos):
 
 const TEXTO = `
 TEXTOS DENTRO DA IMAGEM (seguir ao pé da letra):
-- Idioma: PORTUGUÊS DO BRASIL, com acentuação correta.
+- Idioma: PORTUGUÊS DO BRASIL, com acentuação correta, em 100% dos textos da
+  prancha — títulos, nomes de ambiente, cotas, legenda e indicação de rua.
+  NENHUMA palavra em inglês em lugar nenhum. Escreva "RUA" (nunca "street"),
+  "concreto" (nunca "concrete"), "mesma escala" (nunca "same scale").
+- NÃO escreva nenhuma legenda, nota ou texto solto no rodapé além da legenda de
+  cores especificada mais abaixo. Nada de "escala", "planta humanizada",
+  "same scale", nome de arquivo ou descrição do desenho.
 - Fonte: sans-serif limpa, fina, cinza-escuro, legível e PEQUENA — o texto nunca
   domina o desenho.
 - Em cada ambiente, duas linhas centralizadas: o NOME do ambiente e, abaixo,
@@ -52,8 +58,11 @@ TEXTOS DENTRO DA IMAGEM (seguir ao pé da letra):
   em nenhuma hipótese. Se o ambiente for estreito demais para caber o texto na
   horizontal, escreva o nome FORA do ambiente, ao lado, com uma linha de chamada
   fina apontando para dentro dele.
-- A unidade de área é SEMPRE metro quadrado, escrito "m²" (m com o algarismo dois
-  sobrescrito). NUNCA "m³", NUNCA "m2", NUNCA "M²".
+- A unidade de área é SEMPRE metro quadrado, escrito "m²" — a letra m minúscula
+  seguida do algarismo DOIS sobrescrito. O expoente é o número 2, nunca o número 3.
+  Escrever "m³" (metro cúbico) é ERRO GRAVE: metro cúbico mede volume, e planta
+  baixa mede ÁREA. Antes de entregar, revise CADA rótulo da prancha e confirme que
+  todos terminam com o algarismo 2 sobrescrito, sem exceção.
 - Escreva EXATAMENTE os nomes e as áreas da lista de ambientes. Não traduza,
   não abrevie, não arredonde, não invente ambiente que não esteja na lista,
   não omita nenhum item da lista.
@@ -135,14 +144,39 @@ na MESMA escala, separadas por um espaço branco limpo. À esquerda o PAVIMENTO
 TÉRREO, à direita o PAVIMENTO SUPERIOR. Acima de cada uma, um título pequeno em
 caixa alta: "PAVIMENTO TÉRREO" e "PAVIMENTO SUPERIOR".
 
+O QUE É UM SOBRADO (entenda antes de desenhar): é UMA única casa em DOIS níveis
+empilhados. O pavimento superior é a LAJE construída EM CIMA do térreo — ele não
+tem terreno próprio, não toca o chão e não tem área externa no nível do solo.
+As duas plantas da prancha são dois CORTES HORIZONTAIS da MESMA casa, em alturas
+diferentes. NÃO são duas casas, NÃO são duas unidades, NÃO é o mesmo desenho repetido.
+
+AMBIENTES QUE JAMAIS APARECEM NO PAVIMENTO SUPERIOR (regra absoluta):
+- Garagem, vaga, portão de garagem e qualquer carro.
+- Quintal, jardim, grama, terra, piscina, horta, árvore plantada no chão.
+- Calçada, rua, passeio, muro de divisa e portão da rua.
+- Porta de entrada principal da casa.
+- Qualquer ambiente que esteja listado apenas na lista do TÉRREO.
+Desenhe no pavimento superior EXCLUSIVAMENTE os ambientes da lista do pavimento
+superior — nenhum a mais. Onde o térreo tem garagem, o superior tem quarto, sacada
+ou laje. Onde o térreo tem quintal, o superior simplesmente NÃO EXISTE: ali fica
+o fundo branco da prancha, fora do contorno do piso de cima.
+
+CONFIRA ANTES DE ENTREGAR: percorra a planta da DIREITA (pavimento superior) e
+verifique se há algum CARRO desenhado, algum piso de garagem, alguma GRAMA ou
+qualquer área externa no nível do solo. Se houver, você copiou o térreo por
+engano — refaça aquela área usando apenas os ambientes da lista do superior.
+Um carro só pode existir na planta da ESQUERDA. É fisicamente impossível haver
+um carro no segundo andar de uma casa.
+
 COERÊNCIA ENTRE OS DOIS PAVIMENTOS (regra rígida — a planta é inválida se falhar):
-- O contorno externo da casa é EXATAMENTE o mesmo nos dois pavimentos (mesma
-  largura, mesmo comprimento, mesmo alinhamento).
-- A escada ocupa a MESMA posição nos dois desenhos: no térreo mostrando os degraus
-  subindo, no superior mostrando a chegada e o guarda-corpo.
+- A escada ocupa a MESMA posição e tem a MESMA área nos dois desenhos: no térreo
+  mostrando os degraus subindo, no superior mostrando a chegada e o guarda-corpo.
 - As paredes hidráulicas coincidem: banheiros e área molhada do piso superior
   ficam alinhados sobre os do térreo.
-- A garagem e a entrada principal existem apenas no térreo.
+- O pavimento superior cobre a parte CONSTRUÍDA do térreo (incluindo a garagem,
+  que vira quarto ou sacada em cima) e PARA onde começa a área externa.
+- As duas plantas são desenhadas na MESMA escala e alinhadas pela mesma borda
+  frontal, para que dê para comparar um piso com o outro.
 
 ${blocoAmbientes(p.ambientes_terreo, 'AMBIENTES DO PAVIMENTO TÉRREO')}
 
@@ -167,6 +201,15 @@ PROIBIDO (qualquer um destes invalida a imagem):
 - Closet servindo de passagem entre dois ambientes.
 - Abertura (janela ou porta) desenhada sem a cor do seu tipo.
 - Painel de fundação com paredes diferentes das da planta baixa.
+- Em sobrado: garagem, carro, quintal, grama, piscina, calçada, rua, muro ou
+  porta de entrada desenhados no PAVIMENTO SUPERIOR.
+- Em sobrado: as duas plantas idênticas, como se a casa tivesse sido copiada.
+- Texto em inglês, nome de arquivo, indicação de escala ou qualquer legenda solta
+  no rodapé que não seja a legenda de cores.
+- Bloco de texto descritivo na prancha: ficha técnica escrita, lista de ambientes
+  em forma de texto, parágrafo explicando o projeto, "Programa:", "Partido:",
+  "Tipo:", "Área construída:" ou qualquer trecho desta instrução copiado como
+  texto. A prancha é um DESENHO, não um documento escrito.
 `.trim();
 
 export function montarPromptPlanta(p) {
@@ -175,13 +218,24 @@ export function montarPromptPlanta(p) {
   return `Crie UMA prancha de apresentação arquitetônica, formato paisagem 16:9,
 de um projeto residencial brasileiro para terreno pequeno.
 
-=== IDENTIFICAÇÃO DO PROJETO ===
+ATENÇÃO — COMO LER ESTA INSTRUÇÃO: tudo o que vem abaixo é orientação PARA VOCÊ
+desenhar. NADA disto deve ser copiado como texto dentro da imagem. Não escreva na
+prancha os títulos em maiúsculas, os rótulos "Nome:", "Tipo:", "Terreno:",
+"Programa:", "Partido adotado:", nem qualquer descrição do projeto. O ÚNICO texto
+permitido na imagem é: o título do projeto no topo, os nomes e as áreas dos
+ambientes, os títulos dos dois pavimentos, os títulos dos painéis, as cotas do
+lote e a legenda de cores do rodapé.
+
+[contexto do projeto — não escrever na imagem]
 Nome: ${p.nome}
 Tipo: ${p.tipo === 'sobrado' ? 'sobrado (dois pavimentos)' : 'casa térrea'}
 Terreno: ${p.lote.largura} m de frente × ${p.lote.comprimento} m de fundo (${p.lote.largura}x${p.lote.comprimento} m)
 Área construída aproximada: ${p.area_construida} m²
 Programa: ${p.quartos} quarto(s), sendo ${p.suites} suíte(s) · ${p.banheiros} banheiro(s) · ${vagas}
 ${p.observacao ? `Partido adotado: ${p.observacao}` : ''}
+
+TÍTULO DA PRANCHA: escreva "${p.nome.toUpperCase()}" no topo, em caixa alta,
+alinhado à esquerda, em cinza-escuro. É o único título da prancha.
 
 === ${blocoPisos(p)}
 

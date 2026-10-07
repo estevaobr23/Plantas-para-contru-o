@@ -1,0 +1,470 @@
+[
+  {
+    "id": "p31-terrea-5x25-linear",
+    "estado": "OK",
+    "tentativas": 2,
+    "erros": []
+  },
+  {
+    "id": "p33-terrea-45x25-linear",
+    "estado": "OK",
+    "tentativas": 3,
+    "erros": []
+  },
+  {
+    "id": "p34-terrea-5x30-linear",
+    "estado": "COM RESSALVA",
+    "tentativas": 3,
+    "erros": [
+      "\"Sala de Estar\" com unidade m³",
+      "\"Dormitório 02\" com unidade m³",
+      "\"Hall de Entrada\" com unidade m³",
+      "\"Garagem\": imagem 00,00 ≠ ficha 13,00"
+    ]
+  },
+  {
+    "id": "p32-terrea-6x30-linear",
+    "estado": "COM RESSALVA",
+    "tentativas": 3,
+    "erros": [
+      "\"BANHO SOCIAL\" com unidade m³",
+      "\"COZINHA\" com unidade m³",
+      "\"DORMITÓRIO 02\" com unidade m³",
+      "\"DORMITÓRIO 03\" com unidade m³",
+      "\"A.S.\" com unidade m³"
+    ]
+  },
+  {
+    "id": "p35-terrea-7x25-patio",
+    "estado": "OK",
+    "tentativas": 2,
+    "erros": []
+  },
+  {
+    "id": "p38-terrea-6x25-fundo",
+    "estado": "OK",
+    "tentativas": 1,
+    "erros": []
+  },
+  {
+    "id": "p36-terrea-8x25-patio",
+    "estado": "COM RESSALVA",
+    "tentativas": 3,
+    "erros": [
+      "\"Cozinha\" com unidade m³"
+    ]
+  },
+  {
+    "id": "p37-terrea-6x30-patio",
+    "estado": "COM RESSALVA",
+    "tentativas": 3,
+    "erros": [
+      "\"Quintal\": imagem 54,60 ≠ ficha 54,00"
+    ]
+  },
+  {
+    "id": "p41-terrea-8x20-jardimlateral",
+    "estado": "OK",
+    "tentativas": 1,
+    "erros": []
+  },
+  {
+    "id": "p40-terrea-9x25-fundo",
+    "estado": "COM RESSALVA",
+    "tentativas": 3,
+    "erros": [
+      "\"A.S.\": imagem 4,05 ≠ ficha 3,60",
+      "\"BANHO SUÍTE 01\": imagem 5,20 ≠ ficha 4,00",
+      "\"BANHO SUÍTE 02\": imagem 4,50 ≠ ficha 4,00",
+      "\"JARDIM FRONTAL\": imagem 10,03 ≠ ficha 10,80",
+      "há texto em inglês na prancha"
+    ]
+  },
+  {
+    "id": "p39-terrea-8x25-fundo",
+    "estado": "COM RESSALVA",
+    "tentativas": 3,
+    "erros": [
+      "\"Quintal\" com unidade m³"
+    ]
+  },
+  {
+    "id": "p43-terrea-7x30-jardimlateral",
+    "estado": "OK",
+    "tentativas": 1,
+    "erros": []
+  },
+  {
+    "id": "p42-terrea-9x25-jardimlateral",
+    "estado": "COM RESSALVA",
+    "tentativas": 3,
+    "erros": [
+      "\"Jardim Lateral\" com unidade m³",
+      "\"Banho Suite\" com unidade m³",
+      "\"Quintal\": imagem 31,60 ≠ ficha 51,60"
+    ]
+  },
+  {
+    "id": "p46-terrea-11x25-eml",
+    "estado": "OK",
+    "tentativas": 2,
+    "erros": []
+  },
+  {
+    "id": "p44-terrea-10x25-eml",
+    "estado": "COM RESSALVA",
+    "tentativas": 3,
+    "erros": [
+      "\"GARAGEM\" com unidade m³",
+      "há texto em inglês na prancha",
+      "a prancha tem bloco de texto / ficha escrita"
+    ]
+  },
+  {
+    "id": "p45-terrea-12x25-eml",
+    "estado": "COM RESSALVA",
+    "tentativas": 3,
+    "erros": [
+      "\"Cozinha\" com unidade m³",
+      "\"Closet\" com unidade m³"
+    ]
+  },
+  {
+    "id": "p47-terrea-5x20-varanda",
+    "estado": "COM RESSALVA",
+    "tentativas": 3,
+    "erros": [
+      "\"Dormitório 02\" com unidade m³",
+      "há texto em inglês na prancha"
+    ]
+  },
+  {
+    "id": "p48-terrea-7x25-varanda",
+    "estado": "COM RESSALVA",
+    "tentativas": 3,
+    "erros": [
+      "\"Varanda\" com unidade m³"
+    ]
+  },
+  {
+    "id": "p52-terrea-10x30-gourmet",
+    "estado": "OK",
+    "tentativas": 1,
+    "erros": []
+  },
+  {
+    "id": "p49-terrea-9x20-varanda",
+    "estado": "COM RESSALVA",
+    "tentativas": 3,
+    "erros": [
+      "\"Banho Suíte\" com unidade m³",
+      "\"Dormitório 02\" com unidade m³"
+    ]
+  },
+  {
+    "id": "p50-terrea-6x25-gourmet",
+    "estado": "COM RESSALVA",
+    "tentativas": 3,
+    "erros": [
+      "\"Banho Social\" com unidade m³",
+      "há texto em inglês na prancha"
+    ]
+  },
+  {
+    "id": "p53-terrea-8x20-esquinat",
+    "estado": "OK",
+    "tentativas": 1,
+    "erros": []
+  },
+  {
+    "id": "p51-terrea-8x25-gourmet",
+    "estado": "OK",
+    "tentativas": 2,
+    "erros": []
+  },
+  {
+    "id": "p55-terrea-9x25-esquinat",
+    "estado": "COM RESSALVA",
+    "tentativas": 3,
+    "erros": [
+      "\"Circulação\" com unidade m³"
+    ]
+  },
+  {
+    "id": "p54-terrea-10x20-esquinat",
+    "estado": "OK",
+    "tentativas": 3,
+    "erros": []
+  },
+  {
+    "id": "p57-sobrado-5x25-sobdivisa",
+    "estado": "COM RESSALVA",
+    "tentativas": 3,
+    "erros": [
+      "\"Banho Suite\" com unidade m³",
+      "há texto em inglês na prancha"
+    ]
+  },
+  {
+    "id": "p56-terrea-12x25-esquinat",
+    "estado": "COM RESSALVA",
+    "tentativas": 3,
+    "erros": [
+      "\"A.S.\" com unidade m³",
+      "\"Banho Suite 01\" com unidade m³",
+      "\"Dormitório 03\" com unidade mº",
+      "\"Garagem\" com unidade m³",
+      "\"Sala de Estar\" com unidade m³",
+      "há texto em inglês na prancha"
+    ]
+  },
+  {
+    "id": "p58-sobrado-6x25-sobdivisa",
+    "estado": "COM RESSALVA",
+    "tentativas": 3,
+    "erros": [
+      "\"A.S.\": imagem 5,40 ≠ ficha 3,40",
+      "\"Dormitório 03\": imagem 11,00 ≠ ficha 10,60"
+    ]
+  },
+  {
+    "id": "p61-sobrado-5x20-sobterraco",
+    "estado": "COM RESSALVA",
+    "tentativas": 3,
+    "erros": [
+      "\"Terraço\" com unidade m³",
+      "\"Escada\" com unidade m³",
+      "\"Circulação\" com unidade m³",
+      "há texto em inglês na prancha"
+    ]
+  },
+  {
+    "id": "p60-sobrado-45x20-sobdivisa",
+    "estado": "COM RESSALVA",
+    "tentativas": 3,
+    "erros": [
+      "\"Quintal\": imagem 28,77 ≠ ficha 26,77",
+      "\"Banho Social\": imagem 4,60 ≠ ficha 4,00",
+      "\"Circulação\" com unidade m³",
+      "\"Escada\" com unidade m³",
+      "o pavimento superior mostra carro, grama ou área externa",
+      "ambiente de térreo repetido no piso superior: garagem"
+    ]
+  },
+  {
+    "id": "p59-sobrado-7x20-sobdivisa",
+    "estado": "COM RESSALVA",
+    "tentativas": 3,
+    "erros": [
+      "\"Escada\" com unidade m³",
+      "\"Lavabo\": imagem 3,30 ≠ ficha 2,30",
+      "\"Sala de Estar\" com unidade m³",
+      "\"Dormitório 03\" com unidade m³",
+      "\"Dormitório 03\" com unidade m³",
+      "\"Banho Social\" com unidade m³",
+      "\"Circulação\" com unidade m³",
+      "\"Sacada\": imagem 3,60 ≠ ficha 5,60",
+      "há texto em inglês na prancha"
+    ]
+  },
+  {
+    "id": "p64-sobrado-5x30-sobvazio",
+    "estado": "OK",
+    "tentativas": 3,
+    "erros": []
+  },
+  {
+    "id": "p62-sobrado-7x25-sobterraco",
+    "estado": "COM RESSALVA",
+    "tentativas": 3,
+    "erros": [
+      "\"Suite 01\": imagem 15,80 ≠ ficha 14,80",
+      "há texto em inglês na prancha"
+    ]
+  },
+  {
+    "id": "p63-sobrado-8x20-sobterraco",
+    "estado": "FALHOU",
+    "erro": "HTTP 429 após várias tentativas"
+  },
+  {
+    "id": "p65-sobrado-6x30-sobvazio",
+    "estado": "FALHOU",
+    "erro": "HTTP 429 após várias tentativas"
+  },
+  {
+    "id": "p69-sobrado-9x20-sobpedireito",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p68-sobrado-10x25-sobpedireito",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p70-sobrado-8x25-sobrecuo",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p66-sobrado-4x25-sobvazio",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p71-sobrado-6x30-sobrecuo",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p72-sobrado-10x30-sobrecuo",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p73-sobrado-7x20-sobescritorio",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p74-sobrado-8x25-sobescritorio",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p67-sobrado-8x25-sobpedireito",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p75-sobrado-5x25-sobescritorio",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p76-sobrado-5x20-sobgourmetcima",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p77-sobrado-6x25-sobgourmetcima",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p79-sobrado-7x20-sobesquina",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p80-sobrado-10x20-sobesquina",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p78-sobrado-7x30-sobgourmetcima",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p81-sobrado-9x25-sobesquina",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p82-sobrado-6x20-sobesquina",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p83-terrea-10x20-geminadast",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p84-terrea-10x25-geminadast",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p85-terrea-14x25-geminadast",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p86-sobrado-10x20-geminadass",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p87-sobrado-10x25-geminadass",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p88-sobrado-12x25-geminadass",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p89-terrea-8x25-kitnets",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p90-terrea-10x30-kitnets",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p91-terrea-6x30-unidades",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p92-terrea-8x30-unidades",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p93-terrea-7x35-unidades",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p94-terrea-8x30-frentefundos",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p95-terrea-10x30-frentefundos",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p96-terrea-10x20-comerciot",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p97-terrea-9x25-comerciot",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p98-sobrado-5x25-comercios",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p99-sobrado-7x25-comercios",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  },
+  {
+    "id": "p100-sobrado-10x25-aptoscima",
+    "estado": "FALHOU",
+    "erro": "HTTP 402: {\"error\":{\"code\":402,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+  }
+]
